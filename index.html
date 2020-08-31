@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boomi Data Catalog & Prep</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<link rel="stylesheet" href="style/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div class="ug-main-container">
+	    <div class="ug-top-header clearfix">
+	        <div class="ug-logo-wrapper">
+	            <img src="images/boomi-atomsphere-logo.svg" width="124" height="30" alt="Boomi Atomsphere" />
+	        </div>
+	        <div class="version-details">
+	            <span class="version-name">User Guide</span>
+	        </div>
+	    </div>
+	    <div class="ug-body clearfix">
+	        <div class="ug-left-container col-md-3 col-lg-2">
+	            <div class="ug-nav-header">Contents</div>
+	            <ul>
+	                <li class="menu-item active is-open" data-for="About the Boomi Data Catalog & Prep">
+	                    <span>About the Boomi Data Catalog & Prep<i class="icon-arrow-right active"></i>
+	                    </span>
+	                    <ul class="open">
+	                        <li class="sub-menu-item" data-for="Software Overview">
+	                            <span>Software Overview</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Diverse Data Source">
+	                            <span>Diverse Data Source</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Data Analysis Overview">
+	                            <span>Data Analysis Overview</span>
+	                        </li>
+	                        <li class="menu-item" data-for="Logging In">
+	                            <span>Logging In<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="Password Assistance">
+	                                    <span>Password Assistance</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Using the search Interface">
+	                            <span>Using the search Interface</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Using Filter">
+	                            <span>Using Filter</span>
+	                        </li>
+	                        <li class="menu-item" data-for="Using Tags">
+	                            <span>Using Tags<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="Tags Recommendation">
+	                                    <span>Tags Recommendation</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="menu-item" data-for="Using the Dashboard">
+	                            <span>Using the Dashboard<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="Dashboard Task">
+	                                    <span>Dashboard Task</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Using the BI Explorer and Tableau">
+	                            <span>Using the BI Explorer and Tableau</span>
+	                        </li>
+	                    </ul>
+	                </li>
+
+	                <li class="menu-item" data-for="Conversations">
+	                    <span>Conversations</span>
+	                </li>
+
+	                <li class="menu-item" data-for="Data Stores">
+	                    <span>
+	                        Data Stores
+	                        <i class="icon icon-tiny icon-arrow-right"></i>
+	                    </span>
+	                    <ul>
+	                        <li class="sub-menu-item" data-for="Supported Data Stores">
+	                            <span>Supported Data Stores</span>
+	                        </li>
+	                    </ul>
+	                </li>
+
+	                <li class="menu-item" data-for="Data Sources">
+	                    <span>
+	                        Data Sources
+	                        <i class="icon icon-tiny icon-arrow-right"></i>
+	                    </span>
+	                    <ul>
+	                        <li class="sub-menu-item" data-for="Viewing Data Sources">
+	                            <span>Viewing Data Sources</span>
+	                        </li>
+	                        <li class="menu-item" data-for="Adding a Data Source">
+	                            <span>Adding a Data Source<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="File Crawler Data Source">
+	                                    <span>File Crawler Data Source</span>
+	                                </li>
+	                                <li class="sub-menu-item" data-for="Creating a File Crawler Data Source">
+	                                    <span>Creating a File Crawler Data Source</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Deleting a Data Source">
+	                            <span>Deleting a Data Source</span>
+	                        </li>
+	                    </ul>
+	                </li>
+
+	                <li class="menu-item" data-for="Datasets">
+	                    <span>Datasets<i class="icon icon-tiny icon-arrow-right"></i>
+	                    </span>
+	                    <ul>
+	                        <li class="menu-item" data-for="Data Import and Preparation">
+	                            <span>Data Import and Preparation<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="Data Endorsement">
+	                                    <span>Data Endorsement</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Displaying a Dataset">
+	                            <span>Displaying a Dataset</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Viewing Columns in a Dataset">
+	                            <span>Viewing Columns in a Dataset</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Viewing Dataset Statistics">
+	                            <span>Viewing Dataset Statistics</span>
+	                        </li>
+	                        <li class="menu-item" data-for="Viewing Detailed Column Statistics">
+	                            <span>Viewing Detailed Column Statistics<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="To view detailed column statistics">
+	                                    <span>To view detailed column statistics</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="menu-item" data-for="Setting Column Permission">
+	                            <span>Setting Column Permission<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="How to Set Column Permissions">
+	                                    <span>How to Set Column Permissions</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="menu-item" data-for="Masking Data">
+	                            <span>Masking Data<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="How to Mask data">
+	                                    <span>How to Mask data</span>
+	                                </li>
+	                                <li class="sub-menu-item" data-for="Sensitive Data Types">
+	                                    <span>Sensitive Data Types</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Changing the Column Data Type">
+	                            <span>Changing the Column Data Type</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Creating a Dataset">
+	                            <span>Creating a Dataset</span>
+	                        </li>
+	                        <li class="menu-item" data-for="Data Dictionary">
+	                            <span>Data Dictionary<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="Adding Data Dictionary for a Column">
+	                                    <span>Adding Data Dictionary for a Column</span>
+	                                </li>
+	                                <li class="sub-menu-item" data-for="Adding Predefined Column Values with Data Dictionary">
+	                                    <span>Adding Predefined Column Values with Data Dictionary</span>
+	                                </li>
+	                                <li class="menu-item" data-for="Viewing, Searching and Exporting Data Dictionary">
+	                                    <span>Viewing, Searching and Exporting Data Dictionary<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                                    <ul>
+	                                        <li class="sub-menu-item" data-for="How to View Data Dictionary">
+	                                            <span>How to View Data Dictionary</span>
+	                                        </li>
+	                                        <li class="sub-menu-item" data-for="How to Search Data Dictionary">
+	                                            <span>How to Search Data Dictionary</span>
+	                                        </li>
+	                                        <li class="sub-menu-item" data-for="How to Export Data Dictionary">
+	                                            <span>How to Export Data Dictionary</span>
+	                                        </li>
+	                                    </ul>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Deleting a Dataset">
+	                            <span>Deleting a Dataset</span>
+	                        </li>
+	                    </ul>
+	                </li>
+
+	                <li class="menu-item" data-for="Transform Jobs">
+	                    <span>Transform Jobs<i class="icon icon-tiny icon-arrow-right"></i>
+	                    </span>
+	                    <ul>
+	                        <li class="menu-item" data-for="Viewing Transform Jobs">
+	                            <span>Viewing Transform Jobs<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="Viewing individual Transform Job Details">
+	                                    <span>Viewing individual Transform Job Details</span>
+	                                </li>
+	                                <li class="sub-menu-item" data-for="Job summary info panel">
+	                                    <span>Job summary info panel</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="menu-item" data-for="Overview of Creating a Transform Job">
+	                            <span>Overview of Creating a Transform Job<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="Creating a Transform Job">
+	                                    <span>Creating a Transform Job</span>
+	                                </li>
+	                                <li class="sub-menu-item" data-for="Data source and Dataset">
+	                                    <span>Data source and Dataset</span>
+	                                </li>
+	                                <li class="menu-item" data-for="Join Datasets">
+	                                    <span>Join Datasets<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                                    <ul>
+	                                        <li class="sub-menu-item" data-for="How to Define a Join">
+	                                            <span>How to Define a Join</span>
+	                                        </li>
+	                                    </ul>
+	                                </li>
+	                                <li class="menu-item" data-for="Enrich Data With Derived Attributes">
+	                                    <span>Enrich Data With Derived Attributes<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                                    <ul>
+	                                        <li class="sub-menu-item" data-for="Example">
+	                                            <span>Example</span>
+	                                        </li>
+	                                        <li class="sub-menu-item" data-for="How to Add a Derived Attribute in a Transform Job">
+	                                            <span>How to Add a Derived Attribute in a Transform Job</span>
+	                                        </li>
+	                                    </ul>
+	                                </li>
+	                                <li class="sub-menu-item" data-for="Choose Columns">
+	                                    <span>Choose Columns</span>
+	                                </li>
+	                                <li class="sub-menu-item" data-for="Add Filter">
+	                                    <span>Add Filter</span>
+	                                </li>
+	                                <li class="sub-menu-item" data-for="Aggregate">
+	                                    <span>Aggregate</span>
+	                                </li>
+	                                <li class="sub-menu-item" data-for="Output">
+	                                    <span>Output</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="menu-item" data-for="Copying or Editing a job">
+	                            <span>Copying or Editing a job<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="How to Copy a Job">
+	                                    <span>How to Copy a Job</span>
+	                                </li>
+	                                <li class="sub-menu-item" data-for="How to Edit a Job">
+	                                    <span>How to Edit a Job</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="menu-item" data-for="Running a Job and Specifying Output Options">
+	                            <span>Running a Job and Specifying Output Options<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="Viewing Job Output and Logs">
+	                                    <span>Viewing Job Output and Logs</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="menu-item" data-for="Deleting a Job">
+	                            <span>Deleting a Job</span>
+	                        </li>
+	                    </ul>
+	                </li>
+
+	                <li class="menu-item" data-for="Workflow">
+	                    <span>Workflow<i class="icon icon-tiny icon-arrow-right"></i>
+	                    </span>
+	                    <ul>
+	                        <li class="sub-menu-item" data-for="Viewing Workflows">
+	                            <span>Viewing Workflows</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Creating a Workflow">
+	                            <span>Creating a Workflow</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Deleting a Workflow">
+	                            <span>Deleting a Workflow</span>
+	                        </li>
+	                    </ul>
+	                </li>
+
+	                <li class="menu-item" data-for="Schedules">
+	                    <span>Schedules<i class="icon icon-tiny icon-arrow-right"></i>
+	                    </span>
+	                    <ul>
+	                        <li class="sub-menu-item" data-for="Incremental Data Capture(IDC)">
+	                            <span>Incremental Data Capture(IDC)</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Viewing Schedule">
+	                            <span>Viewing Schedule</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Scheduling Jobs">
+	                            <span>Scheduling Jobs</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Deleting a Schedule">
+	                            <span>Deleting a Schedule</span>
+	                        </li>
+	                    </ul>
+	                </li>
+
+	                <li class="menu-item" data-for="Using Schedule Parameters">
+	                    <span>Using Schedule Parameters<i class="icon icon-tiny icon-arrow-right"></i>
+	                    </span>
+	                    <ul>
+	                        <li class="sub-menu-item" data-for="Supported Variables">
+	                            <span>Supported Variables</span>
+	                        </li>
+	                        <li class="sub-menu-item" data-for="Date and Time Strings">
+	                            <span>Date and Time Strings</span>
+	                        </li>
+	                        <li class="menu-item" data-for="Delta and Strings">
+	                            <span>Delta and Strings<i class="icon icon-tiny icon-arrow-right"></i></span>
+	                            <ul>
+	                                <li class="sub-menu-item" data-for="Example of delta usage">
+	                                    <span>Example of delta usage</span>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </div>
+	        <div class="ug-right-container col-md-9 col-lg-10">
+	            <div class="ug-breadcrumb">
+	                <a href="https://help.boomi.com/" class="link">Boomi Data Catalog &amp; Prep</a>About the Boomi Data Catalog & Prep</div>
+
+	            <!-- html for About DCP content starts here -->
+	            <div class="ug-content-wrapper" data-content="About the Boomi Data Catalog & Prep">
+	                <div class="ug-content-main-header">About the Boomi Data Catalog & Prep</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>The Boomi Data Catalog & Prep is the solution for self-service data and business intelligence. The Boomi Data Catalog & Prep allows you to:</p>
+	                    <ul>
+	                        <li>Discover, organize, and catalog your data, wherever it is located, in whatever form it is in.</li>
+	                        <li>Prepare your data. The Boomi Data Catalog & Prep provides AI tools that simplify the jobs to just a few clicks.</li>
+	                        <li>Secure, protect and manage access to your data by role, and by dataset, row, and column.</li>
+	                    </ul>
+	                    <p>The Boomi Data Catalog & Prep helps the enterprise more quickly and accurately discover, acquire, and transform your data so that it can be combined with existing data and analyzed using business intelligence and visualization tools to extract business insights.</p>
+	                    <p>The Boomi Data Catalog & Prep provides a browser-based data integration software solution. The Boomi platform runs as a client to the data store. Users interact with the Boomi platform through a self-service graphical user interface.</p>
+	                    <p>With the Boomi Data Catalog & Prep, business analysts can select and integrate their data sets without having to write code or involve IT personnel. This allows the analyst to pursue "what if" scenarios with the data and develop business insights much more quickly than with traditional hand-coded programming.</p>
+	                    <p>The Boomi Data Catalog & Prep is a data integration platform built natively on top of the Hadoop ecosystem. It uses the Hadoop Distributed File System (HDFS) as the data store and works with various Hadoop execution components including Hive and MapReduce for data transformation.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Software Overview">
+	                <div class="ug-content-main-header">Software Overview</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>DCP provides a browser-based data integration software solution that runs as a client to the datastore. Users interact with DCP through a self-service graphical user interface.</p>
+	                    <p>Diverse data sources are automatically parsed, normalized, and presented in a familiar tabular format – with no custom programming or manual cleanup.</p>
+	                    <p>With DCP, business analysts can select and integrate their dataset without having to write code or involve IT personnel. This allows the analyst to pursue "what if" scenarios with the data and develop business insights much more quickly than with traditional hand-coded programming.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Diverse Data Source">
+	                <div class="ug-content-main-header">Diverse Data Source</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>Enterprises need the ability to co-mingle datasets from various data sources, including cloud, on-premise, and social. DCP provides rich connectivity to heterogeneous data sources including databases, Hadoop file systems, Amazon Simple Storage Service (S3), Salesforce and Marketo services, and more. Both structured and semi-structured data can be integrated for use in analysis scenarios.</p>
+	                    <p>To integrate the data more quickly, DCP automatically applies complex data parsers and data logic to semi-structured and unstructured data. In social media data, for example, some structure exists, but much of the data must be parsed and normalized before any analysis can occur.</p>
+	                    <p>After passing through the DCP data parser, the data is presented to the business analyst user in the familiar format of rows and columns. Without DCP, software developers would be required to hand code the integration with very technology-oriented tools.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Data Analysis Overview">
+	                <div class="ug-content-main-header">Data Analysis Overview</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>DCP connects the user directly to data assets and brings diverse data sources together for insight discovery. For users who have the Data Analyst or Administrator role, data analysis and insight is gained using a sequence of steps performed through the browser-based user interface:</p>
+	                    <ul>
+	                        <li>Select datasets from a wide variety of data sources</li>
+	                        <li>Join datasets</li>
+	                        <li>Add derived column values</li>
+	                        <li>Create data filters</li>
+	                        <li>Define aggregation</li>
+	                        <li>Schedule transform jobs and view output</li>
+	                    </ul>
+	                    <p>DCP's open platform seamlessly integrates with a wide range of analytics and data visualization tools, including Tableau.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Logging In">
+	                <div class="ug-content-main-header">Logging In</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>Open a web browser and use the following URL to access the DCP web application, where hostname is the IP address or public DNS hostname of the Boomi host machine and port is the HTTP port entered during setup (the default port is 8000):</p>
+	                    <p>http://<b>hostname:port</b>/datai</p>
+	                    <p>For example:</p>
+	                    <p>http://localhost:8000/datai/</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Password Assistance">
+	                <div class="ug-content-main-header">Password Assistance</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>Any DCP user, except for LDAP users, can request to reset their own password. The password can be changed in this way only once in a 24-hour period.</p>
+	                    <ol>
+	                        <li>Click Forgot Password on the DCP login screen.</li>
+	                        <li>
+	                            Enter the user’s email address.
+	                            <p>DCP sends a password reset link to the email address associated with the user’s email address. If it matches the address configured in an active user’s account.</p>
+	                        </li>
+	                        <li>Click the link in the email.</li>
+	                        <li>Enter the desired new password.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Using the search Interface">
+	                <div class="ug-content-main-header">Using the search Interface</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>You can find what you are looking for from any place in the DCP UI – including the first welcome screen. When you first log in to the DCP user interface, the Welcome Screen contains a search box allowing you to quickly start your search.</p>
+	                    <figure>
+	                        <img src="images/1.png" />
+	                    </figure>
+	                    <p>If you are just starting out, you might type "datasets" to see what data is available. If you have already defined several transform jobs, you might type "jobs" to get a list so you can run a job, check job output, or start a new job based on an old one. You can also run more sophisticated searches.</p>
+	                    <p>The Search dialog is now common to all pages in DCP. In the main Search dialog.</p>
+	                    <figure>
+	                        <img src="images/2.png" />
+	                    </figure>
+	                    <p>Clicking in the search box expands it and offers additional search options:</p>
+	                    <figure>
+	                        <img src="images/3.png" />
+	                    </figure>
+	                    <p>
+	                        <img src="images/bulb.png" />
+	                        <b>Recommendations</b> - displays the Things to Try dialog providing templates to help you write search queries that mimic natural human speech. The search interface makes use of natural language processing (NLP), which translates questions phrased as ordinary phrases into database query language.
+	                    </p>
+	                    <figure>
+	                        <img src="images/4.png" />
+	                    </figure>
+
+	                    <p>The Things to Try categories are:</p>
+	                    <ul>
+	                        <li>Data Dictionary  - searches on the data dictionary  for the named column.</li>
+	                        <li>Column stats - provides statistics for a specific column in a dataset. You can ask for the average.</li>
+	                        <li>Dataset stats - provides row count, column count, and size statistics for a dataset.</li>
+	                        <li>Relations - provides relationship information about a term or dataset.</li>
+	                        <li>Permissions - displays user permissions for the specified dataset, column, or source.</li>
+	                    </ul>
+	                    <p>
+	                        <img src="images/trending.png" />
+	                        Trending - displays the most common searches..
+	                    </p>
+	                    <figure>
+	                        <img src="images/5.png" />
+	                    </figure>
+	                    <p>
+	                        <img src="images/rating.png" />
+	                        Pin - click the "star" to save any of your searches as a "favorite, or to "pin" it, making it easier to perform the same search again later. You can also "unpin" it by clicking off the star.
+	                    </p>
+	                    <figure>
+	                        <img src="images/6.png" />
+	                    </figure>
+	                    <p>
+	                        <img src="images/cross.png" />
+	                        Dismiss - dismisses the current search parameters and returns the Search box to its original state.
+	                    </p>
+	                    <figure>
+	                        <img src="images/7.png" />
+	                    </figure>
+	                    <p>If you have the appropriate user permissions, you can click Navigate to Dashboard to get an overview of all DCP objects and activity. Otherwise, click Navigate Away to use the DCP navigation bar and menu links to work with the objects for which you have permissions.</p>
+	                    <p>As you continue to use DCP, look for the search icon or search dialog in any screen that provides a list of objects. You can search for particular datasets, users, jobs, and so on by typing in the search field.</p>
+	                    <p>DCP also provides additional ways to narrow down your search. For example, when searching for datasets, you can first specify a data source to see only datasets from a single source. And you can use tags to categorize objects with any labels that have meaning in your unique usage situation.</p>
+	                    <p>When your search matches the name of a dataset, you can see how the dataset is related to jobs, schedules, and workflows, and how many columns are in the dataset. Each column is identified by an icon that denotes the type of data in the column, including PII data. And, for a job, you can see how many datasets, schedules, and workflows the job is related to.</p>
+	                    <figure>
+	                        <img src="images/8.png" />
+	                    </figure>
+	                    <p>Clicking the name of an item returned by the search, Dataset, Job, Workflow, etc., opens the object for inspection.</p>
+	                    <figure>
+	                        <img src="images/9.png" />
+	                    </figure>
+	                    <p>Click Back to Search to return to the search window.</p>
+	                    <figure>
+	                        <img src="images/10.png" />
+	                    </figure>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Using Filter">
+	                <div class="ug-content-main-header">
+	                    Using Filter
+	                </div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p><img src="images/filter.png" /> Filters are available on all of the Summary pages and allow you to refine the information presented to you. The Summary pages are:</p>
+	                    <ul>
+	                        <li>Datastores</li>
+	                        <li>Data Sources</li>
+	                        <li>Dataset Explorer</li>
+	                        <li>Prepare</li>
+	                        <li>Workflows</li>
+	                        <li>Schedules</li>
+	                    </ul>
+	                    <p>For example, the Datastores Summary page filters by:</p>
+	                    <ul>
+	                        <li>Keyword</li>
+	                        <li>Type</li>
+	                        <li>Adapter</li>
+	                        <li>Owner</li>
+	                        <li>Date modified</li>
+	                    </ul>
+	                    <p>While the Data Sources Summary page filters by:</p>
+	                    <ul>
+	                        <li>Keyword</li>
+	                        <li>Type</li>
+	                        <li>Owner</li>
+	                        <li>Status</li>
+	                        <li>Tags</li>
+	                    </ul>
+	                    <p>Active filters are noted by the Filter icon which displays the number of filters active on a Summary page.</p>
+	                    <figure>
+	                        <img src="images/11.png" />
+	                    </figure>
+	                    <p>Click Reset to clear all filters. Click Refresh <img src="images/refresh.png" /> to refresh just the Summary table.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Using Tags">
+	                <div class="ug-content-main-header">Using Tags</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>To categorize objects and make them easier to find and group, you can add tags to users, data sources, datasets, jobs, workflows, and schedules. A tag is a short text label. An object can have one or more tags, depending on how many categories the object belongs to.</p>
+	                    <p>Any user with permissions on an object can add or remove a tag. Tags can be added when creating an object or when editing an object. Tags are displayed in search results and summary pages. For example, you can use tags to filter the datasets when selecting a dataset for a new transform job.</p>
+	                    <p>A tag can have a maximum of 32 characters and can not contain spaces or special characters.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Tags Recommendation">
+	                <div class="ug-content-main-header">Tags Recommendation</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>When you are creating tags, you can click the Recommendation <img src="images/bulb.png" /> icon and DCP will suggest tags for you based on our AI algorithms.</p>
+	                    <p>For example, for our AI algorithms to suggest a tag for the dataset, click Summary <img src="images/info.png" /> </p>
+	                    <p>To add a tag to a dataset, click <img src="images/edit.png" /> Edit Tags.</p>
+	                    <p>To view tag recommendations, click <img src="images/bulb.png" /> Recommendations. Choose the tags to add to the dataset and click Save.</p>
+	                    <figure>
+	                        <img src="images/12.png" />
+	                    </figure>
+	                    <p>In the Dataset Properties dialog, click in the Tags field, type the new tag, then press the spacebar. When you are finished adding tags, click <b>DONE</b>.</p>
+	                    <p>The tags appear in the <b>DETAILS</b> column of all of the Summary pages. You can also filter on them.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Using the Dashboard">
+	                <div class="ug-content-main-header">Using the Dashboard</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>The DCP Dashboard provides an overview of DCP objects and activity. The Dashboard can be viewed by users with the administrator or data analyst role. To display the Dashboard, click the Navigate to Dashboard link in the login screen or click the DCP icon in the upper left of the screen.</p>
+	                    <p>In the Dashboard, you can choose to view only objects for which you have permissions or view the objects that belong to all users in your organization. However, you can actually access and use data from only those items for which you have been granted permissions.</p>
+	                    <p>The plus icon (+) at the top of the Dashboard provides a convenient way to launch the most common tasks.</p>
+	                    <p>To customize the Dashboard, drag and drop any of the panels into a new location.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Dashboard Task">
+	                <div class="ug-content-main-header">Dashboard Task</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>From the Dashboard, you can perform the following tasks:</p>
+	                    <ul>
+	                        <li>View and modify your own user profile</li>
+	                        <li>Create a transform job</li>
+	                        <li>Define a workflow</li>
+	                        <li>Set up a schedule</li>
+	                        <li>Add a data source and grant other users permissions on it</li>
+	                        <li>Add a dataset and grant other users permissions on it (with some restrictions)</li>
+	                        <li>View lists of users and user groups</li>
+	                        <li>Click the links at the top of the Dashboard to navigate to other pages that list the     existing dataset, transform jobs, and so on</li>
+	                        <li>Search for jobs, datasets, and other objects by name. This filters the Dashboard display so that you see only information related to the search item</li>
+	                        <li>View notifications, such as job status messages</li>
+	                        <li>Read the User Guide</li>
+	                    </ul>
+	                    <p>From the Dashboard, users with Administrator accounts can perform the following additional tasks (for details, see the DCP Administrator’s Guide):</p>
+	                    <ul>
+	                        <li>Modify software settings</li>
+	                        <li>Set up new user accounts and user groups</li>
+	                        <li>View and set up datastores</li>
+	                        <li>View and modify all objects defined in DCP (data sources, datasets, jobs, schedules, users, and so on)</li>
+	                        <li>Control which users can access all data sources and datasets</li>
+	                    </ul>
+	                    <figure>
+	                        <img src="images/13.png" />
+	                    </figure>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Using the BI Explorer and Tableau">
+	                <div class="ug-content-main-header">Using the BI Explorer and Tableau</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>The Tableau BI Explorer provides a Summary page of Tableau workbooks. Navigate to the Tableau workbooks from Discover > Tableau.</p>
+	                    <p>When you first view this page you will see the workbooks have a chain icon. There is also a left side panel with the name of your Tableau server.</p>
+	                    <figure>
+	                        <img src="images/14.png" />
+	                    </figure>
+	                    <p>The chain icon indicates that the current Boomi  user is not mapped to the Tableau server user for the displayed workbooks. When you click Link and enter your Tableau credentials Boomi  creates a mapping between your Boomi  user and your Tableau user. You now have access to the workbooks.</p>
+	                    <p>The BI Tableau Summary page displays the Tableau workbooks in one of three states:</p>
+	                    <ul>
+	                        <li><b>Chain icon</b> -- no mapping has been created between the Boomi  user and the Tableau server user.</li>
+	                        <li><b>Lock icon</b> -- mapping has been created and the user does not have access to the workbook.</li>
+	                        <li><b>No icon</b> -- mapping is complete and the user has access to the workbook.</li>
+	                    </ul>
+	                    <p>After linking, or mapping your Boomi  user credentials to your Tableau user credentials you now see the workbooks to which you have access.</p>
+	                    <figure>
+	                        <img src="images/15.png" />
+	                    </figure>
+	                    <p>Clicking on the workbook opens it and displays a list of your views from the workbook. Opening a view renders the view on the Boomi  server.</p>
+	                    <figure>
+	                        <img src="images/16.png" />
+	                    </figure>
+	                </div>
+	            </div>
+	            <!-- html for About DCP content ends here -->
+
+	            <!-- html for Conversation content starts here -->
+	            <div class="ug-content-wrapper dontshow" data-content="Conversations">
+	                <div class="ug-content-main-header">Conversations</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>DCP users can engage in conversations by exchanging text messages within DCP regarding datasets and jobs. Conversations are useful for collaboration and communication to increase the effectiveness of teams using DCP.</p>
+	                    <p>To use conversations:</p>
+	                    <ol>
+	                        <li>When viewing a dataset or job, click the Chat icon <img src="images/chat.png" /></li>
+	                        <li>
+	                            From the Chat pane type messages and reply to messages from others.
+	                            <figure>
+	                                <img src="images/17.png" />
+	                            </figure>
+	                        </li>
+	                        <li>
+	                            Type comments at the bottom of the chat pane. In a comment, you can use the following special characters to address another user directly or insert a link to an object like another job or dataset:
+	                            <ul>
+	                                <li>Use the @ symbol followed by a user ID to directly address another user. DCP will display a list of suggestions to auto-complete the user ID as you type.</li>
+	                                <li>Use the # symbol followed by the name of a DCP object, like a job or dataset, to insert a hyperlinked reference to that object. DCP will display a list of suggestions to auto-complete the object as you type. <b>Note:</b> This requires NLP to be enabled from Settings.</li>
+	                                <li>PII information is noted by the PII icon in the PII columns.</li>
+	                            </ul>
+	                        </li>
+	                    </ol>
+	                </div>
+	            </div>
+	            <!-- html for Conversation content ends here -->
+
+	            <!-- html for Data Stores content starts here -->
+	            <div class="ug-content-wrapper dontshow" data-content="Data Stores">
+	                <div class="ug-content-main-header">Data Stores</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A datastore describes a specific instance of a system external to DCP that holds data. For example, a datastore may represent an Oracle database, an Amazon S3 or Hadoop file system, a Salesforce account, or any other data storage system supported by DCP.</p>
+	                    <p>Datastores are available in the DCP user interface only after they have been added to DCP, usually by a DCP administrator. When the administrator adds a datastore, they are adding information about how to connect to an external system.</p>
+	                    <p>The datastores are external to DCP, so DCP needs a way to communicate with them. DCP provides a variety of datastore adapters for this purpose. A datastore is typically specified by a DCP datastore adapter and the parameters associated with that adapter. The parameters might include the host name, host IP address, port, and similar characteristics. For more information see "Adapters" and "Data Stores" in the DCP Administrator’s Guide.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Supported Data Stores">
+	                <div class="ug-content-main-header">Supported Data Stores</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>DCP supports the following datastore types:</p>
+	                    <ul>
+	                        <li>Adobe Cloud</li>
+	                        <li>Amazon S3</li>
+	                        <li>Amazon EMR 5.8.0, 5.11.1 HDFS</li>
+	                        <li>Amazon EMR 5.8.0, 5.11.1 Hive</li>
+	                        <li>Apache HDFS 2.5.0, 2.6.0, 2.7.1, 2.7.3</li>
+	                        <li>Apache Hive 0.13.1, 1.1.0, 1.2.1</li>
+	                        <li>Azura Data Lake Store (ADLS)</li>
+	                        <li>Cisco Information Server (CIS) 7.0</li>
+	                        <li>Cloudera HDFS 5.3.0, 5.7, 5.12.1</li>
+	                        <li>Cloudera Hive 5.3.0, 5.7, 5.12.1ddfff</li>
+	                        <li>Google Analytics</li>
+	                        <li>Google BigQuery</li>
+	                        <li>Google Cloud Storage</li>
+	                        <li>Google Sheets</li>
+	                        <li>Greenplum Database</li>
+	                        <li>Hortonworks Data Platform (HDP) HDFS 2.4, 2.6</li>
+	                        <li>Hortonworks Data Platform (HDP) Hive 2.4, 2.6</li>
+	                        <li>IBM DB2 10.5</li>
+	                        <li>IBM DB2 on AS/400 V5R2, V6R1</li>
+	                        <li>MapR 4.0.2 HDFS</li>
+	                        <li>MapR 4.0.2 Hive</li>
+	                        <li>Marketo</li>
+	                        <li>Microsoft Azure Blob</li>
+	                        <li>Microsoft Azure SQL</li>
+	                        <li>Microsoft Dynamics CRM</li>
+	                        <li>Microsoft HDInsight 3.4, 3.6 HDFS</li>
+	                        <li>Microsoft HDInsight 3.4, 3.6 Hive</li>
+	                        <li>MongoDB 3.4</li>
+	                        <li>MySQL 5.7</li>
+	                        <li>Netezza 7.2</li>
+	                        <li>NetSuite CRM, NetSuite ERP</li>
+	                        <li>Oracle 12.1</li>
+	                        <li>PostgreSQL 9.3</li>
+	                        <li>Progress OpenEdge 10.1A, 10.2B</li>
+	                        <li>Redshift</li>
+	                        <li>Remote File System</li>
+	                        <li>Salesforce</li>
+	                        <li>SAP Adaptive Server Enterprise (ASE) 16.0</li>
+	                        <li>SAP HANA SPS11</li>
+	                        <li>ServiceNow</li>
+	                        <li>Snowflake 1.8</li>
+	                        <li>SQL Server 8.0, 11.0</li>
+	                        <li>Tableau 10.4.0, 10.5.0</li>
+	                        <li>Teradata 15.0</li>
+	                        <li>Twitter</li>
+	                        <li>YouTube Analytics</li>
+	                        <li>Zuora</li>
+	                    </ul>
+	                    <p>Additional information is available from the Data Stores chapter in the DCP Administrator’s Guide.</p>
+	                </div>
+	            </div>
+	            <!-- html for Data Stores content ends here -->
+
+	            <!-- html for Data Sources content starts here -->
+	            <div class="ug-content-wrapper dontshow" data-content="Data Sources">
+	                <div class="ug-content-main-header">Data Sources</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A data source is a logical collection of data that is located on a datastore. For example:</p>
+	                    <ul>
+	                        <li>A sales database could be a data source, and the corresponding datastore could be an Oracle database server.</li>
+	                        <li>The directory /data/events could be a data source, and the corresponding datastore could be a Cloudera Hadoop instance. The following types of data sources are supported for use with DCP:</li>
+	                        <li>Databases, such as Oracle and IBM DB2</li>
+	                        <li>Remote file systems, such as Hadoop</li>
+	                        <li>External services, such as Salesforce</li>
+	                    </ul>
+	                    <p>Data sources are listed in the DCP user interface only after they have been added to DCP, usually by a DCP administrator. The administrator can decide which data sources will be made available in DCP and which users can access each data source.</p>
+	                    <p>A data source is specified by the following characteristics:</p>
+	                    <ul>
+	                        <li>Data Store – The underlying storage system.</li>
+	                        <li>Database -- The file directory (folder), or Amazon S3 bucket – entity containing the data comprising the data source.</li>
+	                        <li>Authentication details – Passwords or keys DCP uses to log in to the database, Amazon S3, Salesforce, etc.</li>
+	                    </ul>
+	                    <p>Permissions can be set to determine which DCP users can access each data source. For more information, see the DCP Administrator’s Guide.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Viewing Data Sources">
+	                <div class="ug-content-main-header">Viewing Data Sources</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>To view the available data sources, click Manage in the left navigation bar, then click Data Sources.</p>
+	                    <p>The Data Sources screen lists the available data sources. An icon to the left of each data source name indicates what type of data source it is:</p>
+	                    <ul>
+	                        <li><img src="images/filesystem.png" /> Filesystem</li>
+	                        <li><img src="images/database.png" /> Database</li>
+	                        <li><img src="images/service.png" /> Service</li>
+	                    </ul>
+	                    <p>To find a particular data source, click the magnifying glass search icon above the list and start typing the data source name. If tags have been defined for your data sources, you can narrow down the list by clicking one of the labels in the TAGS column.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Adding a Data Source">
+	                <div class="ug-content-main-header">Adding a Data Source</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>If you have the appropriate permissions you can create a Data Source. Before you start, be sure to have all the configuration details handy, such as usernames, passwords, or secret keys.</p>
+	                    <ol>
+	                        <li>Log in to the DCP user interface with a user account that has administrator permissions, such as the boomi  user.</li>
+	                        <li>Navigate to Manage > Data Source.</li>
+	                        <li>Click the plus icon <img src="images/plus.png" /></li>
+	                        <li>Select the type of datastore that contains the data for this data source:<br/><b>DATABASE, FILESYSTEM, SERVICE, or BI</b>.</li>
+	                        <li>Give the data source a name and a description.</li>
+	                        <li>
+	                            In Datastore Name, choose the name of the datastore you want to use.
+	                            <p><b>Note:</b> Contact your DCP Administrator if you do not see the appropriate Datastore. If the datastore does not appear in the list, it has not yet been added to DCP or you have not been granted permission. Before you can add a data source, the datastore must be added.</p>
+	                        </li>
+	                        <li>Provide the configuration details that are required by the type of datastore you selected. For more information about the specific Data Source see the Boomi  Administrator's Guide.</li>
+	                        <li>
+	                            If you want to use this database to store the output from transform jobs, check the Allow As Output Destination option.
+	                            <p><b>Note:</b> This feature is not available for Postgres.</p>
+	                        </li>
+	                        <li>
+	                            In Permissions, select the users and user groups to whom you want to grant access to this data source.
+	                            <p>For more information, see Data Access Permissions.</p>
+	                        </li>
+	                        <li>(Optional) Define tags if desired. See Using Tags in the DCP User’s Guide for more information.</li>
+	                        <li>You can do bulk import when creating a data source (assuming you have administrator privileges for the data source). If you want to do a bulk import, check Import Database.</li>
+	                        <li>Click <b>ADD SOURCE</b>. If you clicked the Import Database check box, click <b>ADD & IMPORT SOURCE</b>.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="File Crawler Data Source">
+	                <div class="ug-content-main-header">File Crawler Data Source</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>The file crawler data source automatically creates datasets as it traverses a given directory structure. Each unique schema in each unique directory is added as a dataset.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Creating a File Crawler Data Source">
+	                <div class="ug-content-main-header">Creating a File Crawler Data Source</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>Navigate to Manage > Data Sources</li>
+	                        <li>Click New <img src="images/plus.png" /></li>
+	                        <li>Choose <b>FILESYSTEM</b>.</li>
+	                        <li>Enter the following information:
+	                            <ul>
+	                                <li>Datasource Name</li>
+	                                <li>Datasource description</li>
+	                                <li>Permissions</li>
+	                                <li>Tags</li>
+	                            </ul>
+	                        </li>
+	                        <li>Click Next.</li>
+	                        <li>Select the Datastore.</li>
+	                        <li>Enter the User Name.</li>
+	                        <li>Enter the Base Directory (This is the root for this datastore’s data).</li>
+	                        <li>Allow as Output Destination. Select to use this datastore as the output destination for your job output.</li>
+	                        <li>Crawl and Import. Select this option to automatically import and create datasets for each unique discovered schema. Note: When the File Crawler encounters multiple files it checks each file for a schema and creates one dataset per unique schema per directory.</li>
+	                        <li>Set the Crawl Base Directory. This is the first directory containing files you want to be examined.</li>
+	                        <li>Select Recursive to examine all sub-directories.</li>
+	                        <li>For File Inclusions option add any regular expressions (regex) for file types to include using a regex like ".* " and .*csv".</li>
+	                        <li>For File Exclusions option add any regex expression like ".* " and .*csv" for file types to be excluded.</li>
+	                        <li>For Dataset Prefix, add the prefix you want to be added to each dataset.</li>
+	                        <li>For Dataset Tags, add any tags you want to be added to each dataset.</li>
+	                        <li>Click Save & Crawl.</li>
+	                    </ol>
+	                    <p><b>Note:</b> The datasets are created in the background. Check the results by checking the status of the Data Source. You can also re-crawl a datasource to refresh it, or point it to a different directory to create new datasets. The crawler examines file schemas irrespective of file extension and creates one dataset per schema per directory.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Deleting a Data Source">
+	                <div class="ug-content-main-header">Deleting a Data Source</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>With the appropriate permissions, you can delete a Data Source by clicking Delete from the Data Source ellipses. This also lists and deletes references to associated items like datasets, jobs, workflows, and schedules.</p>
+	                    <p>All Deleted items can be retrieved from the Trash. Navigate to Manage > Trash to review all deleted objects, But once an item is "Deleted Permanently" it cannot be retrieved.</p>
+	                    <figure>
+	                        <img src="images/18.png" />
+	                    </figure>
+	                    <p>Deleted Data Sources and their associated objects can be recovered from the Trash.</p>
+	                    <figure>
+	                        <img src="images/19.png" />
+	                    </figure>
+	                    <p>Deleted Data Sources and their associated objects cannot be recovered.</p>
+	                </div>
+	            </div>
+	            <!-- html for Data Sources content ends here -->
+
+	            <!-- html for dataset content starts here -->
+	            <div class="ug-content-wrapper dontshow" data-content="Datasets">
+	                <div class="ug-content-main-header">Datasets</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A dataset is a subset of data from a data source:</p>
+	                    <ul>
+	                        <li>A table in a database</li>
+	                        <li>A file in a Hadoop file system, Amazon S3 bucket, or</li>
+	                        <li>Data in an account hosted by a service such as Salesforce or Marketo DCP users work with datasets to explore the available data and set up transform jobs. Permissions can be granted to determine which DCP users can access each dataset.</li>
+	                    </ul>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Data Import and Preparation">
+	                <div class="ug-content-main-header">Data Import and Preparation</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>When a dataset is added, the data is parsed by DCP:</p>
+	                    <ul>
+	                        <li>DCP detects the structure of the data and creates a list of columns. DCP can detect the characters that separate the data values in a comma-separated value (CSV) file, the name-value pairs in a JSON file, and more. DCP can also work with semi-structured data, where there is no obvious column separator and the data can come from various non-tabular sources such as log files. If the data is in a database, DCP’s job is made easy, because the database has already defined the columns.</li>
+	                        <li>The data type of each data value is detected, such as String (STR), Integer (INT), or Date (DAT). Some of the data is categorized under the classification Personally Identifiable Information (PII), including credit card numbers, social security numbers, email addresses, phone numbers and IP addresses. DCP also supports Character Large Object (CLOB) data. Users can override the automatically assigned data type later. DCP also detects Personally Identifiable Information (PII) and masks it based on default rules.</li>
+	                        <li>After the data is detected, the system imports a technical data dictionary  and merges it with a business data dictionary  and displays both on the Dataset Explorer Data Dictionary  page. The technical data dictionary  includes data types from the database, column comment, and database comments.</li>
+	                        <li>Missing column values and badly written rows are identified.</li>
+	                        <li>
+	                            System Hive, MS SQL server, and Adobe Cloud datasets can be marked as "Writable", allowing them to be used as output targets. Where one of these dataset types is the output target in Jobs and Schedules, only writeable datasets can be chosen.
+	                            <figure>
+	                                <img src="images/20.png" />
+	                            </figure>
+	                        </li>
+	                        <li>A few rows of data are read into DCP as an initial sample. The number of rows can be configured by the DCP administrator as described in General Settings in the DCP Administrator’s Guide. Additional rows of sample data can be viewed as needed.</li>
+	                    </ul>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Data Endorsement">
+	                <div class="ug-content-main-header">Data Endorsement</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>Part of data preparation is tagging your data so that others understand the status of the data.</p>
+	                    <p>DCP has two tags:</p>
+	                    <ul>
+	                        <li>Trusted - trusted as per the requirements of your organization.</li>
+	                        <li>Deprecated - no longer useful or trusted.</li>
+	                    </ul>
+	                    <p>Endorse your data from the Summary icon <img src="images/info.png" /></p>
+	                    <figure>
+	                        <img src="images/21.png" />
+	                    </figure>
+	                    <p>Click History to review the history of endorsements.</p>
+	                    <figure>
+	                        <img src="images/22.png" />
+	                    </figure>
+	                    <p><img src="images/trusted.png" /> Trusted and <img src="images/deprecated.png" /> Deprecated data icons display in the dataset title.</p>
+	                    <figure>
+	                        <img src="images/23.png" />
+	                    </figure>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Displaying a Dataset">
+	                <div class="ug-content-main-header">Displaying a Dataset</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>In the left navigation bar, click Discover > Dataset Explorer.
+	                            <p>The Datasets screen lists the datasets for which the logged-in user is the owner or for which the user has permissions. This might be only a portion of the datasets that exist in each data source. If the data source is a database, all the tables in the database are listed as Datasets.</p>
+	                            <p>You and the other users at your organization can create more datasets at any time. If you do not see a dataset that contains the data you want, you can add another dataset. See Creating a Dataset for more information.</p>
+	                        </li>
+	                        <li>
+	                            Select your dataset. You can select your dataset directly, or use the FILTERS to limit the search.
+	                            <figure>
+	                                <img src="images/24.png" />
+	                            </figure>
+	                            <p>For more information on using FILTERS, see Using Filters.</p>
+	                            <p>In the DATA SOURCE column, the icon to the left of the data source indicates what type of data source it is: database, remote file systems such as Hadoop or Amazon S3, or external service such as Salesforce.</p>
+	                            <ul>
+	                                <li><img src="images/filesystem.png" /> Filesystem</li>
+	                                <li><img src="images/database.png" /> Database</li>
+	                                <li><img src="images/service.png" /> Service</li>
+	                            </ul>
+	                            <p><b>Troubleshooting: No datasets listed for a data source. </b></p>
+	                            <p>When a Hadoop, Amazon S3, or other remote filesystem data source is used for the first time, the Datasets list is empty. Click Create New Dataset and explore the files in the data source folder to choose the ones you want to use as a dataset.</p>
+	                            <p>You can also choose a dataset from <b>RECENTLY VIEWED</b>.</p>
+	                            <figure>
+	                                <img src="images/25.png" />
+	                            </figure>
+	                            <p>Recently viewed displays the last 10 viewed datasets across the dataset columns.</p>
+	                        </li>
+	                        <li>
+	                            In <b>DATASET</b>, click the name of the dataset you want to explore.
+	                            <p>DCP parses the dataset, detects the rows and columns, and displays sample data. Above the sample data, information about the dataset is displayed, including the file name, the number of columns, and the number of rows currently included in the sample data. Scroll left and right in the DCP UI to see all the columns.</p>
+	                            <p>If data masking has been defined, or if you do not have permission to view data in this dataset, the data is partially or fully obscured.</p>
+	                            <figure>
+	                                <img src="images/26.png" />
+	                            </figure>
+	                            <p><b>Note:</b> You can easily change to a different dataset by clicking the display name of the current dataset and selecting a new datasource and dataset.</p>
+	                            <figure>
+	                                <img src="images/27.png" />
+	                            </figure>
+	                        </li>
+	                        <li>To sort the rows of the dataset, hover over one of the column headings and click the drop-down arrow, then choose Ascending or Descending.</li>
+	                        <li>To find other objects that are related to this dataset, click:
+	                            <ol class="lower-alpha">
+	                                <li>Related Resources to find related Jobs, Functions, Filters, or Datasets.
+	                                    <figure>
+	                                        <img src="images/28.png" />
+	                                    </figure>
+	                                </li>
+	                                <li>Similar Datasets to datasets that match the current dataset. The delta between the selected dataset and the matching datasets is highlighted</li>
+	                            </ol>
+	                        </li>
+	                        <p>For example, if you click Similar Datasets, DCP displays suggested datasets based on its recommendation calculations. This can be an easy way to find your way to the dataset that you want to view next.</p>
+	                        <figure>
+	                            <img src="images/29.png" />
+	                        </figure>
+	                        <p>You can also compare datasets to review their similarities. Click the dataset to compare with the primary dataset. The two datasets display side-by-side.</p>
+	                        <p>The similarities are noted, as well as the possibility that the dataset is a possible duplicate.</p>
+	                        <figure>
+	                            <img src="images/30.png" />
+	                        </figure>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Viewing Columns in a Dataset">
+	                <div class="ug-content-main-header">Viewing Columns in a Dataset</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>After selecting a dataset to view, use these steps to navigate through the columns in the dataset.</p>
+	                    <ol>
+	                        <li>To show a quick graph of the sample data in any column, click the column header. A value histogram appears above the table. You can display the histogram for a string column, such as the state in a street address.
+	                            <figure>
+	                                <img src="images/31.png" />
+	                            </figure>
+	                            <p>You can display the histogram for a date column.</p>
+	                            <figure>
+	                                <img src="images/32.png" />
+	                            </figure>
+	                            <p>You can display the histogram for an integer column.</p>
+	                            <figure>
+	                                <img src="images/33.png" />
+	                            </figure>
+	                        </li>
+	                        <li>Move the slider to Range Histogram to see another view of the data. (Not available for some column types.)
+	                            <figure>
+	                                <img src="images/34.png" />
+	                            </figure>
+	                        </li>
+	                        <li>To filter the sample data that is displayed, click on a bar in the histogram, or click and drag to select a range of values in the histogram (the available action depends on the data type of the column).
+	                            <p>For example, you can click on the bar for a single state to display only rows with the matching state.</p>
+	                            <figure>
+	                                <img src="images/35.png" />
+	                            </figure>
+	                            <p>You can click and drag across a range of values in the histogram for a numeric or date column to show only rows with matching values in that column.</p>
+	                            <figure>
+	                                <img src="images/36.png" />
+	                            </figure>
+	                        </li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Viewing Dataset Statistics">
+	                <div class="ug-content-main-header">Viewing Dataset Statistics</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>To see statistics about a dataset, display the dataset in Discover > Dataset Explorer, then view the <b>SAMPLE STATISTICS</b> at the top of the screen.
+	                            <figure>
+	                                <img src="images/37.png" />
+	                            </figure>
+	                            <p>The sample statistics reflect only the set of rows in the sample data currently being displayed.</p>
+	                        </li>
+	                        <li>To view statistics for all the rows in a dataset (not just the sample data rows), click the drop-down arrow next to SAMPLE STATISTICS and choose Full Statistics (the first time) or Full Statistics Recalculate.</li>
+	                    </ol>
+	                    <p>A progress indicator displays while the statistics are calculated. When the job is finished, the icon changes to show the statistics are ready.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Viewing Detailed Column Statistics">
+	                <div class="ug-content-main-header">Viewing Detailed Column Statistics</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>After selecting a dataset to view, use these steps to show data profiling displays for the columns in the dataset.</p>
+	                    <p><b>Note:</b> The profiling calculations can take time if the dataset is large. The DCP system administrator can limit the size of the dataset using the Profiling Maximum Dataset Size setting as described in the DCP Administrator’s Guide.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="To view detailed column statistics">
+	                <div class="ug-content-main-header">To view detailed column statistics</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>
+	                            Click the column you want to explore, then click Column View.
+	                            <figure>
+	                                <img src="images/38.png" />
+	                            </figure>
+	                        </li>
+	                        <li>The right side of the column viewscreen shows a chart that ranks the values in the column by how often the values occur in the sample dataset.
+	                            <p>Depending on the data type of the column, DCP displays a different type of profiling diagram.</p>
+	                            <p>For example, for a string column, DCP displays statistics and a treemap diagram:</p>
+	                            <figure>
+	                                <img src="images/39.png" />
+	                            </figure>
+	                            <p>For an integer column, DCP displays statistics and a frequency histogram that includes the mean and standard deviation:</p>
+	                            <figure>
+	                                <img src="images/40.png" />
+	                            </figure>
+	                            <p>If the sample data is longer than the cell width, a hover tooltip appears to display the full text.</p>
+	                        </li>
+	                        <li>In a <b>DATE</b> column, you can use the <b>YEAR, WEEK, DAY, and FULL</b> buttons to redraw the profiling heatmap with different time groupings. This is helpful to answer questions like, "On what day of the month do most deals close?"
+	                            <figure>
+	                                <img src="images/41.png" />
+	                            </figure>
+	                        </li>
+	                        <li>To return to the previous view, click the Table View button.
+	                            <figure>
+	                                <img src="images/42.png" />
+	                            </figure>
+	                        </li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Setting Column Permission">
+	                <div class="ug-content-main-header">Setting Column Permission</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>The owner of a dataset or a DCP administrator can control which users can view individual columns in the dataset. If a user is not given permission on one or more columns:</p>
+	                    <ul>
+	                        <li>Those columns do not appear in the dataset view and the sample data view.</li>
+	                        <li>Any job that uses masked columns appears greyed out in the Jobs list.</li>
+	                    </ul>
+	                    <p>The user can not click on the job to view its details.</p>
+	                    <ul>
+	                        <li>When defining a transform job, if the user does not have permissions on the column that would be used for a join, then that table is not included in recommended joins.</li>
+	                        <li>Masked columns do not appear in search results.</li>
+	                    </ul>
+	                    <p>To make this feature available, the DCP administrator must check the Enable Column Level Security setting in the General tab of the Settings dialog. For details about settings, see the DCP Administrator’s Guide.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="How to Set Column Permissions">
+	                <div class="ug-content-main-header">How to Set Column Permissions</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>Display the dataset as described in Displaying a Dataset.</li>
+	                        <li>Click the down arrow next to the column heading. A drop-down menu appears.</li>
+	                        <li>Hover the cursor over Permissions. A list of usernames is displayed. These are the users who can be given permission to view the dataset.</li>
+	                        <li>Select and deselect usernames from the list to determine who can and who can not view the column.
+	                            <figure>
+	                                <img src="images/43.png" />
+	                            </figure>
+	                        </li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Masking Data">
+	                <div class="ug-content-main-header">Masking Data</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>DCP masks some sensitive data in the Data Explorer by default, such as credit card numbers, based on data type detection during data import. In addition, the DCP administrator can mask (hide) some of the characters in individual columns in the dataset. When the dataset is displayed in the Data Explorer, the characters will appear as asterisks (*) to users who are logged in without administrator permissions. This is useful to protect sensitive data such as credit card numbers.</p>
+	                    <p><b>Note:</b> The data will be masked only in the Data Explorer.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="How to Mask data">
+	                <div class="ug-content-main-header">How to Mask data</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>Display the dataset as described in Displaying a Dataset.</li>
+	                        <li>Click the down arrow next to the column heading. A drop-down menu appears.</li>
+	                        <li>Hover the cursor over Data Security, then click the slider next to Mask Data.</li>
+	                        <li>Choose one of the following options:
+	                            <ul>
+	                                <li><b>Mask All</b> – change all characters in the column into asterisks.</li>
+	                                <li><b>Partial Mask</b> – change a given number of characters into asterisks.</li>
+	                                <li><b>Partial Show</b> – change all characters into asterisks, except for a given number.</li>
+	                                <figure>
+	                                	<img src="images/how_to_mask_data_1.png">
+	                                </figure>
+	                                <figure>
+	                                	<img src="images/how_to_mask_data_2.png">
+	                                </figure>
+	                            </ul>
+	                        </li>
+	                        <li>Click <b>SAVE</b>.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Sensitive Data Types">
+	                <div class="ug-content-main-header">Sensitive Data Types</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>When DCP connects to a dataset it runs data discovery to automatically determine the type of data contained in the dataset. Some of this data is sensitive and is masked to protect it. These are the sensitive data types that are automatically discovered as personally identifiable information (PII):</p>
+	                    <ul>
+	                        <li>Credit Card Number</li>
+	                        <li>International Mobile Equipment Identity Number</li>
+	                        <li>IP address (IPV4 and IPV6)</li>
+	                        <li>Email</li>
+	                        <li>Genetic Sequence</li>
+	                        <li>Social Security Number (USA)</li>
+	                        <li>Phone Numbers (USA)</li>
+	                        <li>Address (USA)</li>
+	                    </ul>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Changing the Column Data Type">
+	                <div class="ug-content-main-header">Changing the Column Data Type</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>When DCP imports and parses a new data source, it automatically determines the data type of each data column. When viewing a database or CSV dataset, you can change the data type. This is helpful in the rare case where DCP has assigned a different data type than the one intended.</p>
+	                    <p>To change the data type of a column</p>
+	                    <ol>
+	                        <li>Display the dataset as described in Displaying a Dataset.</li>
+	                        <li>Click the data type at the top of a column, then choose a new data type from the drop-down list.
+	                            <figure>
+	                                <img src="images/44.png" />
+	                            </figure>
+	                        </li>
+	                        <li>Click Save.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Creating a Dataset">
+	                <div class="ug-content-main-header">Creating a Dataset</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>DCP can provide access to one or more datasets from each data source. A dataset can be created by the user who owns the data source or any other user who has permission to access the data source.</p>
+	                    <ol>
+	                        <li>In the Dashboard, click the plus icon, then choose "Create Dataset" <img src="images/plus.png" /></li>
+	                        <li>Choose the type of data source: local system, database, file system, or service.</li>
+	                        <li>Click Data Source to scroll through the drop-down list of data sources. Or you can start typing the name to search for a particular data source. Choose the data source you want to use.</li>
+	                        <li>If you chose a file system data source, choose a directory and file to provide the data for the new dataset.
+	                            <p>Imported datasets are visually highlighted as such in the data dictionary display. Imported Description and Imported Data Type columns are shown. These data dictionary  values cannot be changed.</p>
+	                            <figure>
+	                                <img src="images/45.png" />
+	                            </figure>
+	                            <p>If you chose a database or service data source, click the name of a schema or table to provide the data for the new dataset.</p>
+	                            <p>For data sources such as PostgreSQL that support schemas, you can import one schema at a time. You can also import just one table at a time from database data sources.</p>
+	                            <figure>
+	                                <img src="images/46.png" />
+	                            </figure>
+	                            <p>For Services Data Sources, select the tables and click Import.</p>
+	                            <figure>
+	                                <img src="images/47.png" />
+	                            </figure>
+	                        </li>
+	                        <li>If the data source is a file system, you can set the dataset name, description, and user permissions. For a dataset created from a database or service data source, you will set these a bit later in the procedure.</li>
+	                        <li>(Optional) Define tags if desired. For more information see Using Tags.</li>
+	                        <li>Click IMPORT (or, for a file system dataset, CREATE).
+	                            <ol class="lower-alpha">
+	                                <li><b>File System:</b>
+	                                    <ul>
+	                                        <li>When creating a dataset from a CSV file, you can direct DCP to ignore a specified number of rows at the start of the file. This is useful for files where the first few rows do not contain data records, but instead contain headers or comments.</li>
+	                                        <li>Before you click <b>SAVE</b> on your new dataset, click the three dots to display the menu, then choose Parameters.</li>
+	                                    </ul>
+	                                    <figure>
+	                                        <img src="images/48.png" />
+	                                    </figure>
+	                                    <p>Check to see that headersPresent is checked and skipLines matches the number of rows to skip.</p>
+	                                    <figure>
+	                                        <img src="images/49.png" />
+	                                    </figure>
+	                                </li>
+	                                <li><b>Database:</b> (For a database or service dataset)</li>
+	                            </ol>
+	                            <p>After the import is finished, click the name of the new dataset in the list. In the context menu, choose Edit Properties. Give the dataset a name. In Permissions, choose the names of the other users you want to have access to this dataset. The Permissions drop-down list displays the users that have been granted access to the selected data source.</p>
+	                            <p><b>Troubleshooting:</b> No users in the Permissions drop-down list. If the Permissions list does not drop down, then no other users have been granted access to this data source. You can not grant access to any other users at this time. Ask a DCP administrator to add those users to the data source, then come back and edit the dataset to grant additional user access permissions.</p>
+	                        </li>
+	                        <li>Click <b>SAVE</b>.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Data Dictionary">
+	                <div class="ug-content-main-header">Data Dictionary</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>Data Dictionary gives additional information to help people understand the purpose and meaning of a dataset. For each column in a dataset, one or more data dictionary  attributes can be defined. Each attribute contains a piece of additional context, description, or other information about the column.</p>
+	                    <p>If a dataset will be shared and used by many people, or even shared between different organizations or companies, a data dictionary can be very useful to clarify the intention and meaning of the data. It acts like documentation that is built right into the dataset.</p>
+	                    <p>In addition to defining data dictionary  attributes for the column as a whole, you can also define a list of valid column values and assign data dictionary  attributes to each value. For example, a delivery status field might have predefined values like <b>SHIPPED, IN TRANSIT,</b> and <b>DELIVERED</b>. Each value could have data dictionary  attributes that provide details about the meaning of each status.</p>
+	                    <p>Data Dictionary  can be added by the person who creates a dataset or anyone with edit permissions on the dataset.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Adding Data Dictionary for a Column">
+	                <div class="ug-content-main-header">Adding Data Dictionary for a Column</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>View the dataset that you want to work with. See Displaying a Dataset.</li>
+	                        <li>Click Data Dictionary.
+	                            <figure>
+	                                <img src="images/50.png" />
+	                            </figure>
+	                            <p>The data dictionary  view is displayed.</p>
+	                        </li>
+	                        <li>In the data dictionary  view, click Add Attribute <img src="images/add_attr.png" />
+	                            <figure>
+	                                <img src="images/51.png" />
+	                            </figure>
+	                        </li>
+	                        <li>Type a name for the data dictionary  attribute, and choose whether to allow other users to edit the data dictionary  and add star ratings to comment on the usefulness of the data dictionary.
+	                            <figure>
+	                                <img src="images/52.png" />
+	                            </figure>
+	                        </li>
+	                        <li>Press Enter. DCP creates the new attribute with a blank editing area.</li>
+	                        <li>Click in the empty area below the attribute name and next to a column name. Type the value for the attribute. To narrow down the list of columns, click the Search icon above the Column Names. When you are finished typing, click anywhere outside the editing area, and DCP saves the description.</li>
+	                        <li>If desired, repeat steps 3 – 6 to add more data dictionary attributes.
+	                            <figure>
+	                                <img src="images/53.png" />
+	                            </figure>
+	                        </li>
+	                    </ol>
+	                    <p><b>Note:</b> The values you add can also be deleted, but it is a hard delete, it cannot be undone.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Adding Predefined Column Values with Data Dictionary">
+	                <div class="ug-content-main-header">Adding Predefined Column Values with Data Dictionary</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>Show the dataset that you want to work with. See Displaying a Dataset.</li>
+	                        <li>Click Data Dictionary.
+	                            <figure>
+	                                <img src="images/54.png" />
+	                            </figure>
+	                            <p>The data dictionary view is displayed.</p>
+	                        </li>
+	                        <li>In the data dictionary view, click the V symbol next to the name of the column for which you want to set specific attributes.
+	                            <figure>
+	                                <img src="images/55.png" />
+	                            </figure>
+	                        </li>
+	                        <li>Click Add Attribute <img src="images/add_attr.png" /> to add an attribute to a column.
+	                            <figure>
+	                                <img src="images/56.png" />
+	                            </figure>
+	                        </li>
+	                        <li>Continue to click the Add Attribute <img src="images/add_attr.png" /> until the list of possible valid values for the column is complete.</li>
+	                        <li>Type a name for the data dictionary attribute, and choose whether to allow other users to edit the data dictionary and add star ratings to comment on the usefulness of the data dictionary.
+	                            <figure>
+	                                <img src="images/57.png" />
+	                            </figure>
+	                        </li>
+	                        <li>Press Enter. DCP creates the new attribute with a blank editing area.</li>
+	                        <li>Click in the empty area below the attribute name and next to a column value. Type the value for the attribute. When finished, click anywhere outside the editing area, and DCP saves the value.
+	                            <figure>
+	                                <img src="images/58.png" />
+	                            </figure>
+	                        </li>
+	                        <li>If desired, repeat these steps to add more column values and data dictionary attributes. You can also delete user added values and attributes. You cannot undo the delete.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Viewing, Searching and Exporting Data Dictionary">
+	                <div class="ug-content-main-header">Viewing, Searching and Exporting Data Dictionary</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A column in a dataset can have a data dictionary associated with it. Data Dictionary gives additional information about each column to help people understand the purpose and meaning of a dataset.</p>
+	                    <p>Data Dictionary can be added by the person who creates a dataset or anyone with edit permissions on the dataset. For more information about data dictionary, see Adding Data Dictionary for Dataset Columns.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="How to View Data Dictionary">
+	                <div class="ug-content-main-header">How to View Data Dictionary</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>To display the data dictionary when you are viewing a dataset, click Data Dictionary.</p>
+	                    <figure>
+	                        <img src="images/59.png" />
+	                    </figure>
+	                    <p>The data dictionary view is displayed. For each column in the dataset, the associated data dictionary attributes are shown. You can give a one- to five-star rating for the usefulness of the data dictionary (if Rating was enabled when the data dictionary was added, change the data dictionary -if editing is enabled - or add a new data dictionary attribute if you have permission).</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="How to Search Data Dictionary">
+	                <div class="ug-content-main-header">How to Search Data Dictionary</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>Add your search term in the Search dialog, or alternatively, click Recommendations.</li>
+	                        <li>Type the word or phrase you are searching for. If you type only part of a word, DCP will find the entire word that matches it. To search for an exact phrase, enclose it in double quotes.</li>
+	                        <li>Click Data Dictionary.
+	                            <p>When you search for a data dictionary, the results can include datasets, columns, column attributes, values, and value attributes.</p>
+	                            <p>You can choose whether to display the data dictionary search results in a list or in a graphical tree.</p>
+	                            <figure>
+	                                <img src="images/60.png" />
+	                            </figure>
+	                        </li>
+	                        <li>To view and compare search details, click the plus boxes on the nodes, then click Data Dictionary <b>CART</b>.
+	                            <p>(If you are using the list view, the checkboxes are located to the left of the dataset, column, or column value name. Check one or more boxes, then click Data Dictionary CART.)</p>
+	                            <p>In the Data Dictionary Cart, a detailed view of the search results is displayed, showing the dataset, column name, and data dictionary attribute where the search term was found.</p>
+	                            <figure>
+	                                <img src="images/61.png" />
+	                            </figure>
+	                        </li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="How to Export Data Dictionary">
+	                <div class="ug-content-main-header">How to Export Data Dictionary</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>When viewing and searching a data dictionary, you can select portions of the search results and export them to JSON format for collaboration and integration with external systems.</p>
+	                    <ol>
+	                        <li>Click the plus (+) icon to the left of the data dictionary item you want to export.
+	                            <p>This could be a dataset, column, or value name.</p>
+	                        </li>
+	                        <li>Click Data Dictionary <b>CART</b> at the bottom of the screen. The items in this cart are available for export.</li>
+	                        <li>Click <b>EXPORT TO JSON</b>.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Deleting a Dataset">
+	                <div class="ug-content-main-header">Deleting a Dataset</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A dataset can be deleted by either the owner of the dataset or a user with Administrator privileges. To delete a dataset, display it in the Dataset Explorer page or in search results, then click the context menu and choose Delete.</p>
+	                    <p>This deletes all the associated objects also, such as transform jobs. If you do not have permissions on the dependent objects, DCP lists the restricted objects so you can request the owners to give you access to them.</p>
+	                    <p>Deleted datasets are listed in the Trash window. You can restore the dataset from here if desired. When you restore a dataset you are notified of any missing dependent objects.</p>
+	                    <p>All Deleted items can be retrieved from the Trash. Navigate to Manage > Trash to review all deleted objects, But once an item is "Deleted Permanently" it cannot be retrieved.</p>
+	                    <figure>
+	                    	<img src="images/deleting_dataset_1.png">
+	                    </figure>
+	                    <p>Deleted Dataset and their associated objects can be recovered from the Trash.</p>
+	                    <figure>
+	                    	<img src="images/deleting_dataset_2.png">
+	                    </figure>
+	                    <p>Deleted Dataset  and their associated objects cannot be recovered.</p>
+	                </div>
+	            </div>
+	            <!-- html for dataset content ends here -->
+
+	            <!-- html for transform jobs content starts here -->
+	            <div class="ug-content-wrapper dontshow" data-content="Transform Jobs">
+	                <div class="ug-content-main-header">Transform Jobs</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A transform job is a set of rules and functions that take in the raw data from one or more datasets and process the data into a form that provides answers to business information needs.</p>
+	                    <p>The majority of a business analyst user’s time is typically spent creating and running transform jobs.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Viewing Transform Jobs">
+	                <div class="ug-content-main-header">Viewing Transform Jobs</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>The Jobs screen lists the jobs for which the logged-in user is the owner or has permissions.</p>
+	                    <p>In the left navigation bar, click Prepare. In the summary page you can see jobs for which you have permissions.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Viewing individual Transform Job Details">
+	                <div class="ug-content-main-header">Viewing individual Transform Job Details</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>You can view the details of a specific transform job by clicking the Summary icon.</p>
+	                    <figure>
+	                        <img src="images/62.png" />
+	                    </figure>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Job summary info panel">
+	                <div class="ug-content-main-header">Job summary info panel</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>From the summary info panel you can:</p>
+	                    <ul>
+	                        <li>Edit the Description and tags</li>
+	                        <li>Open Chat (LABS required)</li>
+	                        <li>From Chat, request permissions to an object</li>
+	                    </ul>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Overview of Creating a Transform Job">
+	                <div class="ug-content-main-header">Overview of Creating a Transform Job</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>To perform an analysis on the wealth of available data, define one or more transform jobs. This is the key part of DCP software that is used by business analysts from day to day. Users with the Data Analyst or Administrator role can create transform jobs.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Creating a Transform Job">
+	                <div class="ug-content-main-header">Creating a Transform Job</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>The transform job is defined through a six-step wizard in the DCP user interface. We have provided step-by-step instructions for each wizard panel:</p>
+	                    <ol>
+	                        <li>Data Source and Dataset</li>
+	                        <li>Join Datasets</li>
+	                        <li>Enriching the Data with Derived Attributes</li>
+	                        <li>Choose Columns</li>
+	                        <li>Add Filter</li>
+	                        <li>Aggregate</li>
+	                        <li>Output</li>
+	                    </ol>
+	                    <p>You must start at step 1, Data Source and Dataset. Typically, you would then follow the steps in order. However, you can click back to an earlier panel at any time to modify your previous choices. Changing early choices might make later choices invalid or unavailable. For example, if you return to step 2 and change the joined dataset, you might take away the dataset that provided some of the columns you selected in step 4.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Data source and Dataset">
+	                <div class="ug-content-main-header">Data source and Dataset</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>Before you start these steps, you should know which data source and dataset you will be using.</p>
+	                    <ol>
+	                        <li>In the left navigation bar click the plus icon under Build , then click Job.</li>
+	                        <li>Provide a name and optional brief description for the new job.</li>
+	                        <li>(Optional) Define tags if desired. See Using Tags.</li>
+	                        <li>Click <b>CREATE</b>.
+	                            <figure>
+	                                <img src="images/63.png" />
+	                            </figure>
+	                            <p>Now you have launched the job definition wizard, which will walk you through the phases of creating a data transform job. The first phase is the <b>SELECT DATASET</b> panel.</p>
+	                        </li>
+	                        <li>Scroll through the list of datasets. Or you can click the search icon’s drop-down arrow, then choose "Name" to search for a particular dataset by name or "Source" to search by data source name. To choose from a list of data sources, click the Data sources icon. If tags have been defined for your data sources, you can narrow down the list by clicking one of the labels in the TAGS column.
+	                            <p>Choose the dataset you want to use.</p>
+	                            <p>Troubleshooting: No dataset listed. When a Hadoop, Amazon S3, or other remote filesystem data source is used for the first time, the Datasets list is empty. For information about how to add datasets, see Creating a Dataset.</p>
+	                        </li>
+	                        <li>(Optional) To take a look at the data inside the dataset, click <b>SAMPLE DATA</b>.
+	                            <p>DCP displays a few rows of data from the selected dataset. You can narrow down the displayed columns by clicking the Search icon and typing part of the column name. When you are finished, click SAMPLE DATA again to return to the previous screen.</p>
+	                        </li>
+	                        <li>Click <b>JOIN DATASETS</b> to go on to the next step in defining a transform job.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Join Datasets">
+	                <div class="ug-content-main-header">Join Datasets</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p><i>This procedure is part of creating a transform job. In the steps below, it is assumed you have started creating a transform job and reached the Join Datasets panel.</i></p>
+	                    <p>A join is a logical connection between two sets of data, based on matching values in certain fields. New data rows are created that contain values from both datasets.</p>
+	                    <p>For example, if you have a database table that contains customer addresses and another database table that contains customer orders, the two tables can be joined on the customer name. In this way, the address information is associated with each order.</p>
+	                    <p>In DCP, joins are used when creating transform jobs. The DCP user interface provides graphical guidance and suggestions to make creating joins easier. You will typically just need to click "Save" to accept the default join suggestions provided. However, to get the most out of your transform jobs, it can be useful to learn more about joins. For example, joins come in various types, such as inner joins and outer joins. The join type affects how the join operates.</p>
+	                    <p>Joins are a major topic in the field of data storage. If you are not familiar with joins, you can learn more from the large amounts of information available in print and online.</p>
+	                    <p>In the Join Datasets panel, you can define relationships between multiple datasets.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="How to Define a Join">
+	                <div class="ug-content-main-header">Join Datasets </div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>This step is optional. To skip it, click the Enrich tab and continue with Enriching the Data with Derived Attributes.</p>
+	                    <ol>
+	                        <li>Click <b>JOIN DATASETS</b>.</li>
+	                        <li>Based on the data in the first selected dataset, DCP suggests additional dataset that can be joined. The suggestions are displayed in the OneClick Joins<sup>TM</sup> tab.
+	                            <p>Click the dataset you want to add to the join. Repeat this step to add more joins from this tab.</p>
+	                            <figure>
+	                                <img src="images/64.png" />
+	                            </figure>
+	                        </li>
+	                        <li>If you don’t want to use any of the suggested joins, or you want to define additional joins, click the <b>BUILD YOUR OWN</b> tab and choose a different dataset.
+	                            <p>DCP finds the matching key columns and suggests one or more recommended joins in the <b>RECOMMENDATIONS</b> tab.</p>
+	                            <p>If the recommended join is not what you need, click <b>BUILD YOUR OWN</b> again. To change the type of join, choose Inner Join, Right Outer Join, Left Outer Join, or Full Outer Join. If you want to choose different dataset column names to use in the join, use the column picker to choose new column names for the left and right sides of the join.</p>
+	                            <figure>
+	                                <img src="images/65.png" />
+	                            </figure>
+	                        </li>
+	                        <li>Based on the dataset that was just joined, DCP might suggest another dataset that can be joined. If you want to continue, repeat these steps to add more joins.</li>
+	                        <li>To modify,swap or delete a join, hover the cursor over the join and click more option dots Edit, swap or remove.
+	                            <figure>
+	                                <img src="images/66.png" />
+	                            </figure>
+	                            <p>When you click EDIT, the left side of the panel changes to the Build Your Own view. To change the type of join, choose Inner Join, Right Outer Join, Left Outer Join, or Full Outer Join. If you want to choose different dataset column names to use in the join, use the column picker to choose new column names for the left and right sides of the join.</p>
+	                            <figure>
+	                                <img src="images/67.png" />
+	                            </figure>
+	                            <p>When you are finished editing the join, click <b>DONE</b>.</p>
+	                        </li>
+	                        <li>(Optional) If you click <b>SAMPLE DATA</b>, you can now see sample data from all the joined datasets.</li>
+	                        <li>Click <b>ENRICH DATA</b> to go on to the next step in defining a transform job.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Enrich Data With Derived Attributes">
+	                <div class="ug-content-main-header">Enrich Data With Derived Attributes</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p><i>This procedure is part of creating a transform job. In the steps below, it is assumed you have started creating a transform job and reached the Enrich Data panel.</i></p>
+	                    <p>A derived attribute is a way to obtain the desired value by performing arithmetic calculations or other operations on the values of columns in a dataset. The derivation is performed on each row (record) of the dataset.</p>
+	                    <p>Using derived attributes can make the output of a transform job more meaningful and readable. Instead of scanning through multiple columns looking for all the related pieces to form a single concept, get the big picture in a single column. Instead of writing programs or spreadsheets to perform calculations on the returned data, perform those calculations right in the transform job, and let it hand you the answers.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Example">
+	                <div class="ug-content-main-header">Example</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>Suppose you have a dataset containing information about employees. For each employee, you have individual columns containing the first name, last name, and monthly salary.</p>
+	                    <table>
+	                        <thead>
+	                        <tr>
+	                            <th>firstname</th>
+	                            <th>lastname</th>
+	                            <th>Monthly</th>
+	                        </tr>
+	                        </thead>
+	                        <tbody>
+	                        <tr>
+	                            <td>Merri</td>
+	                            <td>Seals</td>
+	                            <td>6695.50</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Eugena</td>
+	                            <td>Kingsley</td>
+	                            <td>12100</td>
+	                        </tr>
+	                        </tbody>
+	                    </table>
+	                    <p>You could create derived attributes like the following:</p>
+	                    <ul>
+	                        <li>Multiply an employee’s monthly salary by twelve to find the yearly salary</li>
+	                        <li>Derive a person’s full name by putting the first name and last name together</li>
+	                    </ul>
+	                    <table>
+	                        <thead>
+	                        <tr>
+	                            <th>name</th>
+	                            <th>yearly</th>
+	                        </tr>
+	                        </thead>
+	                        <tbody>
+	                        <tr>
+	                            <td>Merri seals</td>
+	                            <td>80346</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Eugena Kingsley</td>
+	                            <td>145200</td>
+	                        </tr>
+	                        </tbody>
+	                    </table>
+	                    <p>The derived attribute is given a name and added to the job’s result set. It looks just like any other column. The difference is that the value is not stored in any column in the source dataset; it is the result of some calculation or processing that is done on one or more underlying columns in the dataset.</p>
+	                    <p>Derived attributes can be referred to by name and used like any other column in the job’s result set. For example, you can group by or sort by the derived attribute. And if the result set is saved and used as a data source for other jobs, the derived attribute can be used as a building block for further derived attributes in those jobs.</p>
+	                    <p>A transform job that includes derived attributes might, in fact, return no columns at all from the underlying dataset. Instead, the output might be entirely made up of derived attributes, providing a more compact and more customized view of the data.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="How to Add a Derived Attribute in a Transform Job">
+	                <div class="ug-content-main-header">How to Add a Derived Attribute in a Transform Job</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>In the Enrich Data panel, you can define derived attributes.</p>
+	                    <p>This step is optional. To skip it, click the Choose tab and continue with Choose Columns.</p>
+	                    <ol>
+	                        <li>Click <b>ENRICH DATA</b>.</li>
+	                        <li>If any derived attributes have already been defined that would be applicable in this transform job, DCP displays these suggested derived attributes in the OneClick Functions<sup>TM</sup> tab. Click one or more of the suggestions to add it to the job. The selected items appear in the Saved Functions area.
+	                            <figure>
+	                                <img src="images/68.png" />
+	                            </figure>
+	                            <p>OneClick Function<sup>TM</sup> are derived attributes that have previously been defined using this job’s selected dataset(s). The derived attributes might have been defined in this job or in any other job that uses one or more of the same dataset.</p>
+	                        </li>
+	                        <li>After selecting a function, you can modify it. Click the function in the Saved Functions area.
+	                            <p>Make your desired changes. When you save the job, the new version of the function becomes available for use by other jobs. If the function was already in use, the previous definition is replaced by the new definition.</p>
+	                        </li>
+	                        <li>If no OneClick Functions<sup>TM</sup> are displayed, or if you want to define new derived attributes, click the <b>BUILD YOUR OWN</b> tab.</li>
+	                        <li>Type a name and (optional) description for the new attribute.</li>
+	                        <li> In Function Editor , create a derived attribute in the Free-form text field so you can type in any function, including user-defined functions.
+	                            <p>Click function and column picker icon to view the definition and usage of every function. Use this as a reference while you are defining derived attributes.</p>
+	                        </li>
+	                        <li>Under Expression, click on the blank line and start typing.
+	                            <p>DCP displays a list of functions, arithmetic operators, and column names that match whatever you have typed so far. For example, if you begin typing "con … ", UPD displays a list including the conv and concat functions.</p>
+	                            <figure>
+	                                <img src="images/69.png" />
+	                            </figure>
+	                            <figure>
+	                                <img src="images/70.png" />
+	                            </figure>
+	                            <p>When you see the item you want in the list, click to choose it. The chosen item appears in the editing area. If you choose a function, its syntax appears; for example, concat(string a,string b). The name of the function comes first (like concat) and any parameters to the function are represented by placeholder values (like string a and string b).</p>
+	                            <p>Click one of the parameter placeholders in the function syntax, and DCP displays a list of valid column names that could be used for that parameter. For example, when you click the string,a parameter of the concat function, DCP displays the names of string type columns from the dataset.</p>
+	                            <p>You can either click one of the suggestions in the drop-down or type a literal value that matches the data type of the parameter. For example, you could either click a dataset column name, like customer.c_name or type a string, like "Name: ".</p>
+	                            <p>To enter a column name that contains a space, enclose it in square brackets.</p>
+	                            <figure>
+	                                <img src="images/71.png" />
+	                            </figure>
+	                            <p>You can enter expressions that are more complex than the point. For example:</p>
+	                            <p>concat(customer.firstname," ",customer.lastname,", ", callcenter.resolutionstatus)</p>
+	                            <p>As you are typing, whenever you come to the end of one word or symbolic group, DCP will pause briefly to parse your input and verify that what you have typed is valid. This real-time assistance helps make sure you are entering a valid expression.</p>
+	                            <p>You can enter Hive user-defined functions (UDFs). A UDF is a way to write code to extend the capabilities of Hive. If the built-in Hive functions do not meet your needs, you can extend Hive by writing a custom UDF.</p>
+	                            <p>Custom UDFs are not created using DCP software. They are written in the Java programming language. Each custom UDF extends the Hive UDF class and implements the evaluate method. Inside this evaluate method, write the code to perform whatever function you need on the data. Compile the code, upload it to your Hive cluster, and run a few Hive console commands to make the UDF available for use. The UDF can then be used in derived attribute definitions just like any other Hive function. For more information about creating custom UDFs, see:</p>
+	                            <ul>
+	                                <li>cwiki.apache.org/confluence/display/Hive/HivePlugins</li>
+	                                <li>snowplowanalytics.com/blog/2013/02/08/writing-hive-udfs-and-serdes</li>
+	                            </ul>
+	                            <p>You can try an example UDF from these documents in the DCP Advanced view, perhaps with some modifications to match the column names in your datasets.</p>
+	                            <p>Error icon will be displayed if the function is not completed and the syntax is incorrect. When the function is complete, Done button will be enabled.</p>
+	                        </li>
+	                        <li>Click <b>DONE</b>.</li>
+	                        <li>(Optional) To add more derived attributes, repeat these steps.</li>
+	                        <li>(Optional) To take a look at the data inside the dataset, click <b>SAMPLE DATA</b>. To see an updated view of the sample data including all choices made so far, click <b>PREVIEW</b>.
+	                            <p>The preview data now includes the derived attributes.</p>
+	                            <p>When you are finished, click <b>SAMPLE DATA</b> again to return to the derived attributes screen.</p>
+	                        </li>
+	                        <li>When you are finished adding derived attributes, click the Choose tab.
+	                            <p>Continue with the instructions at Choose Columns.</p>
+	                        </li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Choose Columns">
+	                <div class="ug-content-main-header">Choose Columns</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p><i>This procedure is part of creating a transform job. In the steps below, it is assumed you have started creating a transform job and reached the Choose Columns panel.</i></p>
+	                    <p>In the Choose Columns panel, you select which subset of the data you want to include in the job output.</p>
+	                    <p>If you define derived attributes in the Enrich Data panel, this step is optional. To skip it, click <b>ADD FILTER</b> and continue with Add Filter.</p>
+	                    <ol>
+	                        <li>Click the names of the columns you want to include in the output of the transform job. The columns you choose depend solely on the intended use of the transform job. To narrow down the columns, click the search icon and start typing part of the column name.
+	                            <p>The number of columns selected is shown in the counter next to the <b>VIEW SELECTED COLUMNS</b> link.</p>
+	                            <p>For example, in the following job, 7 columns are selected. The total number of columns is shown as 8 because there is 1 derived attribute defined in this job.</p>
+	                            <figure>
+	                                <img src="images/72.png" />
+	                            </figure>
+	                        </li>
+	                        <li>(Optional) To get more details about the columns that are selected so far, click <b>VIEW SELECTED COLUMNS</b>. A table is displayed that shows more information about each column, including the source dataset, data type, and (for derived attributes) the defining expression. To return to the main Columns panel, click <b>ADD MORE COLUMNS</b>.</li>
+	                        <li>(Optional) To take a look at the data inside the dataset, click <b>SAMPLE DATA</b>. To see an updated view of the sample data including all choices made so far, click <b>PREVIEW</b>.
+	                            <p>The preview data now includes the chosen columns.</p>
+	                            <p>When you are finished, click <b>SAMPLE DATA</b> again to return to the columns screen.</p>
+	                        </li>
+	                        <li>When you are finished, click <b>ADD FILTER</b>.
+	                            <p>The Add Filter panel appears.</p>
+	                        </li>
+	                    </ol>
+	                    <p>View column level panel details against every columns</p>
+	                    <figure>
+                            <img src="images/choose_columns_1.png" />
+                        </figure>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Add Filter">
+	                <div class="ug-content-main-header">Add Filter</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p><i>This procedure is part of creating a transform job. In the steps below, it is assumed you have started creating a transform job and reached the Filters panel.</i></p>
+	                    <p>In the Add Filter panel, you can set up conditions that will affect which rows are included in the job’s results. Filters are useful when you want to include only data that meets certain criteria, such as only customers above a certain income level or only years when the average rainfall was below a certain amount.</p>
+	                    <p>This step is optional. To skip it, click Aggregate.</p>
+	                    <ol>
+	                        <li>Click <b>ADD FILTER</b>.</li>
+	                        <li>If any filters have already been defined that would be applicable in this transform job, DCP displays these suggested filters in the OneClick Filters™ tab. Click one of the suggestions to add it to the job. The selected item appears in the Saved Filter area. A job can have only one filter.
+	                            <p>OneClick Filters<sup>TM</sup> are filters that have previously been defined using this job’s selected dataset(s) and columns. The filters might have been defined in this job or in any other job that uses one or more of the same dataset columns.</p>
+	                        </li>
+	                        <li>After selecting a filter, you can modify it. Hover over the filter in the Saved Filter area and click <b>EDIT</b>.
+	                            <p>Make your desired changes to the filter. When you save the job, the new version of the filter becomes available for use by other jobs. If the filter was already in use, the previous definition is also saved and remains in use in those jobs. In this case, you will see two OneClick Filters<sup>TM</sup> with the same name but different definitions.</p>
+	                            <p>If no OneClick Filters<sup>TM</sup> are displayed, or if you want to define a new filter, click the <b>BUILD YOUR OWN</b> tab.</p>
+	                        </li>
+	                        <li>Give the filter a name and (optional) description.</li>
+	                        <li>Click <b>ADD CONDITION</b>.</li>
+	                        <li>In Select a column, click the down arrow. From the drop-down list, choose the column to which you want to apply screening criteria.
+	                            <p><b>Troubleshooting:</b> The desired column is not shown. Filters are based on columns in the job results. If the columns you want are not in the drop-down list, then it was not selected for inclusion in the results. You can click the Choose Columns panel again and add the desired column as described in Choose Columns.</p>
+	                        </li>
+	                        <li>Choose the logical operator (=, <, etc.)
+	                            <p>For more information about the operators, refer to SQL documentation.</p>
+	                        </li>
+	                        <li>In the second Columns field, choose a column name or type a value.
+	                            <p>Typing a value will work only if the column’s data type and the operator are compatible. For example, with string columns, use the LIKE operator rather than the equal sign (=).</p>
+	                        </li>
+	                        <li>(Optional) Click <b>ADD CONDITION</b> again to define another test that the data must pass.</li>
+	                        <li>(Optional) Choose between the logical operators AND and OR. This choice is needed only if you define more than one condition. The choice you make here will be used to connect all the conditions as a group.</li>
+	                        <li>(Optional) Use <b>ADD GROUP</b> to create groups of conditions that are evaluated together. The result for the entire group can then be used as a value in a larger expression. This is also useful when you want to combine both AND and OR conditions in a single filter. The grouped conditions are placed inside parentheses in the filter expression.</li>
+	                        <li>When you are finished, click <b>AGGREGATE</b>.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Aggregate">
+	                <div class="ug-content-main-header">Aggregate</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p><i>This procedure is part of creating a transform job. In the steps below, it is assumed you have started creating a transform job and reached the Aggregation panel.</i></p>
+	                    <p>In the Aggregate panel, you determine which result set columns will be displayed in the row (SELECT), which will be used to group result rows (GROUP), and apply aggregate functions to summarize the data in groups of rows (COUNT, SUM, etc.).</p>
+	                    <ol>
+	                        <li>Click the <b>SELECT</b> box next to the rows you want to display in the result set, or click <b>SELECT ALL</b>.</li>
+	                        <li>Click the <b>GROUP</b> box next to the rows you want to use as the basis for data grouping, or click <b>GROUP ALL</b>.</li>
+	                        <li>Click the boxes for any desired aggregate functions, such as <b>COUNT</b>.
+	                            <p>This will create a summary column. For more information about aggregate functions, see SQL documentation.</p>
+	                        </li>
+	                        <li>Click <b>SAVE</b> or <b>SAVE & RUN</b>. If you chose RUN, see Running a Job and Specifying Output Options for next steps.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Output">
+	                <div class="ug-content-main-header">Output</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>Output allows the user to view all of the selected columns and map those columns against the output, including reordering the columns as necessary.</p>
+	                    <figure>
+	                        <img src="images/73.png" />
+	                    </figure>
+	                    <p>There are different output types:</p>
+	                    <ul>
+	                        <li>Adobe Campaign Standard</li>
+	                        <li>Adobe Experience Platform</li>
+	                        <li>Amazon S3</li>
+	                        <li>BigQuery</li>
+	                        <li>Dynamic 365</li>
+	                        <li>Greenplum</li>
+	                        <li>HDFS</li>
+	                        <li>HIVE</li>
+	                        <li>MySQL</li>
+	                        <li>Redshift</li>
+	                        <li>SQL Server</li>
+	                    </ul>
+	                    <p>The UI allows you to map your output columns against your source by rearranging the columns.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Copying or Editing a job">
+	                <div class="ug-content-main-header">Copying or Editing a job</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>Instead of creating a new job from scratch, you might want to start from an existing job and modify it. You can create a clone, or copy, of an existing job.</p>
+	                    <p>You can edit a previously saved job to make changes to the dataset, join, derived attributes, columns, or any other aspect of the job. When you do, a new numbered version of the job is saved. Previous versions of the job are available so you can access and run any version, compare two versions, or revert to a previous job version.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="How to Copy a Job">
+	                <div class="ug-content-main-header">How to Copy a Job</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>In the left navigation bar, click Prepare. You can click the My View icon to see only jobs for which you have permissions or click the Community icon to see all the jobs created by users in your organization.</li>
+	                        <li>Hover over the name of the job you want to copy. A menu icon (three vertical dots) appears. Click to open the menu, then choose Clone.
+	                            <figure>
+	                                <img src="images/74.png" />
+	                            </figure>
+	                        </li>
+	                        <li>Give the new job a name, and click <b>CLONE</b>.
+	                            <p>The new job appears in the Jobs list.</p>
+	                        </li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="How to Edit a Job">
+	                <div class="ug-content-main-header">How to Edit a Job</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>In the left navigation bar, click Prepare. You can click the My View icon to see only jobs for which you have permissions or click the Community icon to see all the jobs created by users at your organization.</li>
+	                        <li>Double-click the name of the job you want to modify.</li>
+	                        <li>When you are finished making changes, click <b>SAVE</b>.</li>
+	                        <li>In the Save Changes popup, type a comment to explain why you modified the job.</li>
+	                        <li>Click <b>SAVE</b> or <b>SAVE & RUN</b>.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Running a Job and Specifying Output Options">
+	                <div class="ug-content-main-header">Running a Job and Specifying Output Options</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>When you finish defining a job, in the <b>AGGREGATE</b> panel, choose <b>SAVE & RUN</b>.</li>
+	                        <li>The <b>JOB OUTPUT</b> dialog appears so you can specify the output location, file compression, and format conversion.
+	                            <p>Click HDFS, Hive, MS SQ or any. The dialog box changes depending on which you select.</p>
+	                            <ul>
+	                                <li>In the HDFS dialog, you can choose the output location and path (folder), enable output compression and choose the compression format, or choose to convert the output to comma-separated value (CSV) format, Tableau Data Extract (TDE) format, or Tableau Workbook (TBWX) format, and set the file names for the converted files. When you are finished making selections, click RUN.</li>
+	                                <li>In the Hive dialog, you can choose the schema and table, enable output compression, and choose the compression format. When you are finished making selections, click RUN.</li>
+	                                <li>In the <b>MS SQL</b> dialog, you can choose the schema and table, enable output compression, and choose the compression format. The format of the chosen table should match exactly the format of the generated table. When you are finished making selections, click RUN.
+	                                    <p>The <b>MS SQL</b> option is available only if the DCP administrator added a datastore of that type which was defined as an allowable output destination. See Adding a Data  Store in the DCP Administrator’s Guide.</p>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li>To run the job again later, use any of the following techniques:
+	                            <ul>
+	                                <li>In the left navigation, click Prepare. Find the job you want to run, click the name of the job, and click <b>RUN</b>.</li>
+	                                <li>Include the job when you define a new workflow and schedule. The job will run at the interval defined in the schedule. For more information see Workflows or Schedules.</li>
+	                                <li>In the left navigation bar, click Automate, then click Schedules. In the Summary page, find the name of the schedule that includes the job you want to run. Click the menu icon and choose Run Immediate
+	                                    <figure>
+	                                        <img src="images/75.png" />
+	                                    </figure>
+	                                </li>
+	                                <li>In Activity on the Dashboard, hover over the job name. Click the menu icon and choose Rerun.
+	                                    <figure>
+	                                        <img src="images/76.png" />
+	                                    </figure>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Viewing Job Output and Logs">
+	                <div class="ug-content-main-header">Viewing Job Output and Logs</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>When a transform job runs, it creates a set of result data. You can see sample result data in the DCP user interface. When creating a new transform job, it is useful to run the job and check the sample output so you can fine-tune the job if necessary.</p>
+	                    <p>Jobs also emit status messages while they are running. To troubleshoot a job that did not complete successfully, it is helpful to view the message log.</p>
+	                    <ol>
+	                        <li>Click Dashboard.</li>
+	                        <li>In Activity, find and click the name of the schedule that contains the job you are interested in.
+	                            <p>The Activity Detail window is displayed.</p>
+	                        </li>
+	                        <li>Click <b>LOGS</b> to see whether the job ran successfully, how long it took, and what runtime messages were generated.</li>
+	                        <li>Click <b>OUTPUT</b> to see the data returned by the transform job.</li>
+	                        <li>To export the data for use in an external tool, click <b>EXTRACT FILES</b> and choose the file format you want (.csv, .tde, or .twbx), then click Generate.</li>
+	                        <li>To store a copy of the output on your local computer, click <b>EXTRACT FILES</b>, hover on one of the generated files, then click Download.</li>
+	                        <li>To view the underlying dataset and columns that were used to create the current result set, click <b>LINEAGE</b>. In the data lineage page, you can view the input and output of a data transformation to gain a more thorough understanding of job results.
+	                            <figure>
+	                                <img src="images/77.png" />
+	                            </figure>
+	                            <p>For more information, see Running a Job and Specifying Output Options.</p>
+	                        </li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Deleting a Job">
+	                <div class="ug-content-main-header">Deleting a Job</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A job can be deleted by either the owner of the job or a user with Administrator privileges. To delete a job, display it in the Prepare page, the Jobs pane of the Dashboard, or in search results, then click the context menu and choose Delete.</p>
+	                    <p>This deletes all the dependent objects also, such as filters and derived attributes. If you do not have permissions on the dependent objects, DCP lists the restricted objects so you can request the owners to give you access to them.</p>
+	                    <p>All Deleted items can be retrieved from the Trash. Navigate to Manage > Trash to review all deleted objects, But once an item is "Deleted Permanently" it cannot be retrieved.</p>
+	                </div>
+	            </div>
+	            <!-- html for transform jobs content ends here -->
+
+	            <!-- html for workflow content starts here -->
+	            <div class="ug-content-wrapper dontshow" data-content="Workflow">
+	                <div class="ug-content-main-header">Workflow</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A workflow is a set of one or more jobs to be run as a logical group. Workflows are useful for running multiple jobs as a group and for setting up relationships between jobs. For example, you might use the results from one transform job as input to a second transform job. In this type of scenario, you can set DCP up to run the second job in the workflow only if the first job completes successfully.</p>
+	                    <p>A workflow can also contain just a single job. In fact, every job is required to be in a workflow in order to run. When a user runs an individual job directly, DCP creates a default workflow for the job.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Viewing Workflows">
+	                <div class="ug-content-main-header">Viewing Workflows</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>The Workflows screen lists the workflows for which the logged-in user is the owner or has permissions.</p>
+	                    <p>In the left navigation bar, click Automate, then click Workflows. You can click the My View icon to see only workflows for jobs for which you have permissions or click the Community icon to see all the workflows created by users at your organization.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Creating a Workflow">
+	                <div class="ug-content-main-header">Creating a Workflow</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <ol>
+	                        <li>In the Workflow summary page, click the plus icon.</li>
+	                        <li>Provide a name and optional brief description for the new workflow.</li>
+	                        <li>(Optional) Define tags if desired. See Using Tags.</li>
+	                        <li>Click <b>CREATE</b>.
+	                            <figure>
+	                                <img src="images/78.png" />
+	                            </figure>
+	                        </li>
+	                        <li>Drag and drop a job from Jobs to Canvas (or double-click the job, and it will appear in the upper left corner of the canvas). If the workflow is to contain more than one job, repeat this step.
+	                            <figure>
+	                                <img src="images/79.png" />
+	                            </figure>
+	                        </li>
+	                        <li>
+	                            (For workflows that contain just one job, skip to step 6.) To define the order of the jobs and dependencies between them, connect the jobs in the Canvas. Drag from the anchor on one job and drop on another job.
+	                            <p>The Option popup is displayed.</p>
+	                        </li>
+	                        <li>In Option, choose what condition the first job must meet in order for the next job to run. Either the second job runs only when the first job runs successfully, or the second job runs only when the first job fails.
+	                            <figure>
+	                                <img src="images/80.png" />
+	                            </figure>
+	                        </li>
+	                        <li>(Optional) If you want to remove a job from the workflow, click the <b>X</b> next to the job name in Jobs.</li>
+	                        <li>To find a job in the workflow, click the search icon at the top of the canvas and start typing any part of the job name. The matching jobs are highlighted in the canvas.
+	                            <figure>
+	                                <img src="images/81.png" />
+	                            </figure>
+	                        </li>
+	                        <li>When the workflow is done, click <b>SAVE</b>.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Deleting a Workflow">
+	                <div class="ug-content-main-header">Deleting a Workflow</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A workflow can be deleted by either the owner of the workflow or a user with Administrator privileges. To delete a workflow, display it in the Workflows list page, the Workflows pane of the Dashboard, or in search results, then click the context menu and choose Delete.</p>
+	                    <p>This deletes all the dependent objects also. If you do not have permissions on the dependent objects, DCP lists the restricted objects so you can request the owners to give you access to them.</p>
+	                    <p>Deleted workflows are listed in the Trash window. You can restore the workflow from here if desired. An error message notifies you if there are any missing dependencies.</p>
+	                    <p>All Deleted items can be retrieved from the Trash. Navigate to Manage > Trash to review all deleted objects, But once an item is "Deleted Permanently" it cannot be retrieved.</p>
+	                    <figure>
+	                    	<img src="images/deleting_workflow_1.png">
+	                    </figure>
+	                    <p>Deleted Workflow and their associated objects can be recovered from the Trash.</p>
+	                    <figure>
+	                    	<img src="images/deleting_workflow_2.png">
+	                    </figure>
+	                    <p>Deleted Workflow  and their associated objects cannot be recovered.</p>
+	                </div>
+	            </div>
+	            <!-- html for workflow content ends here -->
+
+	            <!-- html for Schedules content ends here -->
+	            <div class="ug-content-wrapper dontshow" data-content="Schedules">
+	                <div class="ug-content-main-header">Schedules</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A schedule is a set of rules that tell when and how often to run a workflow. The schedule can also specify the output format and location. Schedules are useful for popular jobs that need to run frequently or for jobs that are required to run at regular intervals. With schedules, you can automate this recurring process.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Incremental Data Capture(IDC)">
+	                <div class="ug-content-main-header">Incremental Data Capture(IDC)</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>When creating a schedule, you can configure it to use incremental data capture (IDC) for one or more of the jobs in the workflow. When IDC is used, the job retrieves only data that has been added since the last time the workflow ran.</p>
+	                    <p>IDC is useful to operationalize a workflow by scheduling it to run at given time intervals and consider only new data for each run.</p>
+	                    <p>To set up IDC, you designate a particular database column as the IDC column for that job. For example, consider a transaction store database where every new transaction is logged with a transaction timestamp, item purchased, quantity, sale price, and other details. A job that aggregates total daily transactions could schedule the workflow to run once each day and use the timestamp column as the IDC column.</p>
+	                    <p>Typically, date or timestamp columns are used for IDC. Alternatively, use any column where new values are always added in increasing order; for example, auto-generated row numbers.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Viewing Schedule">
+	                <div class="ug-content-main-header">Viewing Schedule</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>The Schedules screen lists the schedules for which the logged-in user is the owner or has permissions.</p>
+	                    <p>In the left navigation bar, click Automate, then click Schedules. You can click the My View icon to see only schedules for workflows for which you have permissions or click the Community icon to see all the schedules created by users at your organization.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Scheduling Jobs">
+	                <div class="ug-content-main-header">Scheduling Jobs</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A schedule is a way to apply controlling conditions to a workflow, such as specifying how often the workflow runs. When scheduling a workflow, you can use incremental data capture (IDC) to make each job in the workflow retrieve only data that has been added since the last time the workflow ran. DCP supports IDC for database and Hive datasets.</p>
+	                    <p>If a workflow schedule is running when the next one is scheduled to run, the new task is aborted. Ensure that sufficient time is allowed between scheduled runs.</p>
+	                    <ol>
+	                        <li>In the schedule summary, click the plus icon.</li>
+	                        <li>Provide a name and optional brief description of the new schedule.</li>
+	                        <li>(Optional) Define tags if desired. See Using Tags.</li>
+	                        <li>Click <b>CREATE</b>.</li>
+	                        <li>In Select Workflow, click the name of the workflow for which you want to create a schedule. The jobs in the workflow are listed. For each job, its dataset is listed.</li>
+	                        <li>In Frequency, choose how often the workflow runs.</li>
+	                        <li>Set the time of day, the interval between repeated runs, and (optionally) the end date when you want the recurring workflow to stop running.</li>
+	                        <li>In Notifications, enter one or more email addresses to receive notification when the schedule runs.</li>
+	                        <li>In Jobs & Datasets, click the pencil icon next to each job to set options for the job output, such as file format, location, compression, HDFS or Hive. You can also use schedule parameters; for more information, see Using Schedule Parameters. When finished, click Save.</li>
+	                        <li>In IDC, choose the column that you want to use to control incremental data capture.
+	                            <p><b>Note:</b> The IDC choice is displayed only for data sources where it is appropriate; for example, it is not available for .CSV files.</p>
+	                            <p>If you set an IDC column, the job will retrieve only data that has been added since the last time the workflow ran. Choose a column that contains a timestamp or some other data that is reliably incremented in an orderly, sequential manner. For more information about IDC, see Incremental Data Capture (IDC).</p>
+	                        </li>
+	                        <li>Click <b>SAVE</b>.</li>
+	                    </ol>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Deleting a Schedule">
+	                <div class="ug-content-main-header">Viewing Schedule</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>A schedule can be deleted by either the owner of the schedule or a user with Administrator privileges. To delete a schedule, display it in the Schedules Summary page, the Activity panel of the Dashboard, or in search results, then click the context menu and choose Delete.</p>
+	                    <p>This deletes all the dependent objects also. If you do not have permissions on the dependent objects, DCP lists the restricted objects so you can request the owners to give you access to them.</p>
+	                    <p>Deleted schedules are listed in the <b>TRASH</b> window. From this window, the schedule can be restored or permanently deleted. When you restore a schedule you are notified of any missing dependencies.</p>
+	                    <p>All Deleted items can be retrieved from the Trash. Navigate to Manage > Trash to review all deleted objects, But once an item is "Deleted Permanently" it cannot be retrieved.</p>
+	                    <figure>
+	                    	<img src="images/deleting_schedule_1.png">
+	                    </figure>
+	                    <p>Deleted Schedule  and their associated objects can be recovered from the Trash.</p>
+	                    <figure>
+	                    	<img src="images/deleting_schedule_2.png">
+	                    </figure>
+	                    <p>Deleted Schedule and their associated objects cannot be recovered.</p>
+	                </div>
+	            </div>
+	            <!-- html for Schedules content ends here -->
+
+	            <!-- html for Schedule Parameters content starts here -->
+	            <div class="ug-content-wrapper dontshow" data-content="Using Schedule Parameters">
+	                <div class="ug-content-main-header">Using Schedule Parameters</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>This section explains how variables can be used in schedules to process dataset sources incrementally based on desired conditions.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Supported Variables">
+	                <div class="ug-content-main-header">Supported Variables</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>$DATE(format) [+|- delta]$</p>
+	                    <p>$DATETIME(format) [+|- delta]$</p>
+	                    <p>$WORKFLOW_NAME$</p>
+	                    <p>$JOB_NAME$</p>
+	                    <p>$SCHEDULE_NAME$</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Date and Time Strings">
+	                <div class="ug-content-main-header">Date and Time Strings</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>The format strings for $DATE$ and $DATETIME$ can include any of the following:</p>
+	                    <table>
+	                        <thead>
+	                        <tr>
+	                            <th>Directive</th>
+	                            <th>Meaning</th>
+	                            <th>Example</th>
+	                        </tr>
+	                        </thead>
+	                        <tbody>
+	                            <tr>
+	                                <td>%a</td>
+	                                <td>Weekday as locale’s abbreviated name.</td>
+	                                <td>Sunday, Monday, ..., Saturday (en_US); Sonntag, Montag, ..., Samstag (de_DE)</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%A</td>
+	                                <td>Weekday as locale’s full name.</td>
+	                                <td>Sunday, Monday, ..., Saturday (en_US); Sonntag, Montag, ..., Samstag (de_DE)</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%w</td>
+	                                <td>Weekday as a decimal number, where 0 is Sunday and 6 is Saturday</td>
+	                                <td>0, 1, ..., 6</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%d</td>
+	                                <td>Day of the month as a zero-padded decimal</td>
+	                                <td>01, 02, ..., 31</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%b</td>
+	                                <td>Month as locale’s abbreviated name.</td>
+	                                <td>Jan, Feb, ..., Dec (en_US); Jan, Feb, ..., Dez (de_DE)</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%B</td>
+	                                <td>Month as locale’s full name.</td>
+	                                <td>January, February, ..., December (en_US); Januar, Februar, ..., Deczember (de_DE)</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%m</td>
+	                                <td>Month as a zero-padded decimal number.</td>
+	                                <td>01, 02, ..., 12</td>
+	                            </tr>
+	                            <tr>
+	                                <td>$y</td>
+	                                <td>Year without century as a zero-padded decimal number.</td>
+	                                <td>00, 01, ..., 99</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%Y</td>
+	                                <td>Year with century as a decimal number.</td>
+	                                <td>1970, 1988, 2001, 2013</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%H</td>
+	                                <td>Hour (24-hour clock) as a zero-padded decimal number.</td>
+	                                <td>00, 01, ..., 23</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%I</td>
+	                                <td>Hour (12-hour clock) as a zero-padded decimal number.</td>
+	                                <td>01, 02, ..., 12</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%p</td>
+	                                <td>Locale’s equivalent of either AM or PM.</td>
+	                                <td>AM, PM (en_US); am, pm (de_DE)</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%M</td>
+	                                <td>Minute as a zero-padded decimal number.</td>
+	                                <td>00, 01, ..., 59</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%S</td>
+	                                <td>Second as a zero-padded decimal number.</td>
+	                                <td>00, 01, ..., 59</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%f</td>
+	                                <td>Microsecond as a decimal number, zero-padded on the left.</td>
+	                                <td>000000, 000001, ..., 999999</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%z</td>
+	                                <td>UTC offset in the form +HHMM or -HHMM (empty string if the object is naive).</td>
+	                                <td>(empty), +0000, -0400, +1030</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%Z</td>
+	                                <td>Time zone name (empty string if the object is naive).</td>
+	                                <td>(empty), UTC, EST, CST</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%j</td>
+	                                <td>Day of the year as a zero-padded decimal number.</td>
+	                                <td>001, 002, ..., 366</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%U</td>
+	                                <td>Week number of the year (Sunday as the first day of the week) as a zero-padded decimal number. All days in a new year preceding the first Sunday are considered to be in week 0.</td>
+	                                <td>00, 01, ..., 53</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%W</td>
+	                                <td>Week number of the year (Monday as the first day of the week) as a decimal number. All days in a new year preceding the first Monday are considered to be in week 0.</td>
+	                                <td>00, 01, ..., 53</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%c</td>
+	                                <td>Locale’s appropriate date and time representation.</td>
+	                                <td>Tue Aug 16 21:30:00 1988 (en_US); Di 16 Aug 21:30:00 1988 (de_DE)</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%x</td>
+	                                <td>Locale’s appropriate date representation.</td>
+	                                <td>08/16/88 (None); 08/16/1988 (en_US); 16.08.1988 (de_DE)</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%X</td>
+	                                <td>Locale’s appropriate time representation.</td>
+	                                <td>21:30:00 (en_US); 21:30:00 (de_DE)</td>
+	                            </tr>
+	                            <tr>
+	                                <td>%%</td>
+	                                <td>A literal '%' character.</td>
+	                                <td>%</td>
+	                            </tr>
+	                        </tbody>
+	                    </table>
+	                    <p>For the $DATE$ variable, the use of format directives that are time-related will result in values as if the time is 00:00:00.</p>
+	                    <p>The use of format directives that include a / can be interpreted as directories. For example, $DATE(%d/%m/%Y)$ might be formatted as 1/1/2014, which depending on where the substituted string is used could be interpreted as three directories.</p>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Delta and Strings">
+	                <div class="ug-content-main-header">Delta and Strings</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>For $DATE$ and $DATETIME$ variables, the delta string is in the format: ...].</p>
+	                    <p>&lt;op&gt; &lt;number&gt; &lt;length&gt; [&lt;number&gt; &lt;length&gt;</p>
+	                    <p>Valid &lt;op&gt; are:</p>
+	                    <ul>
+	                        <li>+</li>
+	                        <li>-</li>
+	                    </ul>
+	                    <p>For $DATE$ valid lengths are:</p>
+	                    <ul>
+	                        <li>day(s)</li>
+	                        <li>month(s)</li>
+	                        <li>years(s)</li>
+	                    </ul>
+	                    <p>For $DATETIME$ valid lengths are:</p>
+	                    <ul>
+	                        <li>day(s)</li>
+	                        <li>month(s)</li>
+	                        <li>year(s)</li>
+	                        <li>hour(s)</li>
+	                        <li>minute(s)</li>
+	                        <li>second(s)</li>
+	                    </ul>
+	                </div>
+	            </div>
+
+	            <div class="ug-content-wrapper dontshow" data-content="Example of delta usage">
+	                <div class="ug-content-main-header">Example of delta usage</div>
+	                <div class="col-12 col-md-8 col-lg-9 ug-content">
+	                    <p>my_dir = '/data/$DATETIME(%Y-%m-%d) - 1 month 15 days 2 years$/'</p>
+	                    <p><b>Note:</b> Ordering is not important in the delta.</p>
+	                </div>
+	            </div>
+	            <!-- html for Schedule Parameters content ends here -->
+	        </div>
+	    </div>
+	</div>
+</body>
+<script type="text/javascript" src="script/script.js"></script>
+</html>
